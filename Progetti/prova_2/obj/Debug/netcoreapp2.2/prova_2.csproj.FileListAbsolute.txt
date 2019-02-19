@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/bin/Debug/netcoreapp2.2/prova_2.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/bin/Debug/netcoreapp2.2/prova_2.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/bin/Debug/netcoreapp2.2/prova_2.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/bin/Debug/netcoreapp2.2/prova_2.dll
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/bin/Debug/netcoreapp2.2/prova_2.pdb
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/obj/Debug/netcoreapp2.2/prova_2.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/obj/Debug/netcoreapp2.2/prova_2.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/obj/Debug/netcoreapp2.2/prova_2.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/obj/Debug/netcoreapp2.2/prova_2.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/obj/Debug/netcoreapp2.2/prova_2.dll
+/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_2/obj/Debug/netcoreapp2.2/prova_2.pdb

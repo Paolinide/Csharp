@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/bin/Debug/netcoreapp2.2/net_calc.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/bin/Debug/netcoreapp2.2/net_calc.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/bin/Debug/netcoreapp2.2/net_calc.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/bin/Debug/netcoreapp2.2/net_calc.dll
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/bin/Debug/netcoreapp2.2/net_calc.pdb
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/obj/Debug/netcoreapp2.2/net_calc.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/obj/Debug/netcoreapp2.2/net_calc.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/obj/Debug/netcoreapp2.2/net_calc.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/obj/Debug/netcoreapp2.2/net_calc.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/obj/Debug/netcoreapp2.2/net_calc.dll
+/Users/jeanpaul/Documents/Dam/C#/Progetti/net_calc/obj/Debug/netcoreapp2.2/net_calc.pdb

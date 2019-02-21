@@ -14,10 +14,8 @@ namespace prova_1
             for (int i = 0; i < l; i++)
                 vett1[i] = dado(l);
             StampaVettore(vett1);
-            vett1 = RiordinaVettore(vett1);
-            StampaVettore(vett1);
 
-            int[] vett2 = CopiaVettore(vett1);
+            int[] vett2 = RiordinaVettore(vett1, alContrario: true);
             StampaVettore(vett2);
             ReversaVettore(ref vett2);
             StampaVettore(vett2);
@@ -36,7 +34,7 @@ namespace prova_1
         static public void StampaVettore<T>(T[] vettore, bool inLinea = true)
         {
             for (int i = 0; i < vettore.Length; i++)
-                Console.Write("{1,2}{2}", i, vettore[i], (inLinea) ? " " : "\n");
+                Console.Write("{0}{1,2}{2}", (inLinea) ? "" : "["+i+"]", vettore[i], (inLinea) ? " " : "\n");
             if (inLinea) Console.WriteLine();
         }
         static public T[] CopiaVettore<T>(T[] vettore)
@@ -58,26 +56,30 @@ namespace prova_1
                 vettore[l - i - 1] = temp;
             }
         }
-        static public void ReversaVettore<T>(ref T[] vettore) { for (int i = 0; i < vettore.Length / 2; i++) Scambia(ref vettore[i], ref vettore[vettore.Length - i - 1]); }
+        static public void ReversaVettore<T>(ref T[] vettore)
+        {
+            for (int i = 0; i < vettore.Length / 2; i++)
+                Scambia(ref vettore[i], ref vettore[vettore.Length - i - 1]);
+        }
         static public void Scambia<T>(ref T primo, ref T secondo)
         {
             T temp = primo;
             primo = secondo;
             secondo = temp;
         }
-        static public T[] RiordinaVettore<T>(T[] vettore)
+        static public T[] RiordinaVettore<T>(T[] vettore, bool alContrario = false) where T : struct, IComparable<T>
         {
-            T[] risultato = new T[vettore.Length];
             for (int j = 0; j < vettore.Length - 1; j++)
             {
-                Console.Write(j + ": ");
                 for (int i = 0; i < vettore.Length - 1 - j; i++)
                 {
-                    Console.Write(" {0}:{1}_{2}", i, vettore[i], vettore[i+1]);
+                    if (alContrario)
+                    { if (vettore[i].CompareTo(vettore[i + 1]) < 0) Scambia(ref vettore[i], ref vettore[i + 1]); }
+                    else
+                    { if (vettore[i].CompareTo(vettore[i + 1]) > 0) Scambia(ref vettore[i], ref vettore[i + 1]); }
                 }
-                Console.WriteLine();
             }
-            return risultato;
+            return vettore;
         }
     }
 }

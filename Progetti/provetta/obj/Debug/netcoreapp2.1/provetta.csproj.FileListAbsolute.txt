@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Programmi C#\provetta\obj\Debug\netcoreapp2.1\provetta.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Programmi C#\provetta\obj\Debug\netcoreapp2.1\provetta.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Programmi C#\provetta\obj\Debug\netcoreapp2.1\provetta.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Programmi C#\provetta\obj\Debug\netcoreapp2.1\provetta.AssemblyInfo.cs
+C:\Users\admin\Documents\Programmi C#\provetta\bin\Debug\netcoreapp2.1\provetta.deps.json
+C:\Users\admin\Documents\Programmi C#\provetta\bin\Debug\netcoreapp2.1\provetta.runtimeconfig.json
+C:\Users\admin\Documents\Programmi C#\provetta\bin\Debug\netcoreapp2.1\provetta.runtimeconfig.dev.json
+C:\Users\admin\Documents\Programmi C#\provetta\bin\Debug\netcoreapp2.1\provetta.dll
+C:\Users\admin\Documents\Programmi C#\provetta\bin\Debug\netcoreapp2.1\provetta.pdb
+C:\Users\admin\Documents\Programmi C#\provetta\obj\Debug\netcoreapp2.1\provetta.dll
+C:\Users\admin\Documents\Programmi C#\provetta\obj\Debug\netcoreapp2.1\provetta.pdb

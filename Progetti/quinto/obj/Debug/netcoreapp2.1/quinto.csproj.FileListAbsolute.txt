@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Programmi C#\quinto\bin\Debug\netcoreapp2.1\quinto.deps.json
+C:\Users\admin\Documents\Programmi C#\quinto\bin\Debug\netcoreapp2.1\quinto.runtimeconfig.json
+C:\Users\admin\Documents\Programmi C#\quinto\bin\Debug\netcoreapp2.1\quinto.runtimeconfig.dev.json
+C:\Users\admin\Documents\Programmi C#\quinto\bin\Debug\netcoreapp2.1\quinto.dll
+C:\Users\admin\Documents\Programmi C#\quinto\bin\Debug\netcoreapp2.1\quinto.pdb
+C:\Users\admin\Documents\Programmi C#\quinto\obj\Debug\netcoreapp2.1\quinto.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Programmi C#\quinto\obj\Debug\netcoreapp2.1\quinto.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Programmi C#\quinto\obj\Debug\netcoreapp2.1\quinto.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Programmi C#\quinto\obj\Debug\netcoreapp2.1\quinto.AssemblyInfo.cs
+C:\Users\admin\Documents\Programmi C#\quinto\obj\Debug\netcoreapp2.1\quinto.dll
+C:\Users\admin\Documents\Programmi C#\quinto\obj\Debug\netcoreapp2.1\quinto.pdb

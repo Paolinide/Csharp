@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\obj\Debug\netcoreapp2.1\CHIEDI_INTERO.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\obj\Debug\netcoreapp2.1\CHIEDI_INTERO.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\obj\Debug\netcoreapp2.1\CHIEDI_INTERO.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\obj\Debug\netcoreapp2.1\CHIEDI_INTERO.AssemblyInfo.cs
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\bin\Debug\netcoreapp2.1\CHIEDI_INTERO.deps.json
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\bin\Debug\netcoreapp2.1\CHIEDI_INTERO.runtimeconfig.json
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\bin\Debug\netcoreapp2.1\CHIEDI_INTERO.runtimeconfig.dev.json
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\bin\Debug\netcoreapp2.1\CHIEDI_INTERO.dll
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\bin\Debug\netcoreapp2.1\CHIEDI_INTERO.pdb
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\obj\Debug\netcoreapp2.1\CHIEDI_INTERO.dll
+C:\Users\admin\Documents\Programmi C#\CHIEDI_INTERO\obj\Debug\netcoreapp2.1\CHIEDI_INTERO.pdb

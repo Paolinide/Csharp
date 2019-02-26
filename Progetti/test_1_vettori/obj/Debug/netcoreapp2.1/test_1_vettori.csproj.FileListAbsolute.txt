@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\bin\Debug\netcoreapp2.1\test_1_vettori.deps.json
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\bin\Debug\netcoreapp2.1\test_1_vettori.runtimeconfig.json
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\bin\Debug\netcoreapp2.1\test_1_vettori.runtimeconfig.dev.json
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\bin\Debug\netcoreapp2.1\test_1_vettori.dll
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\bin\Debug\netcoreapp2.1\test_1_vettori.pdb
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\obj\Debug\netcoreapp2.1\test_1_vettori.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\obj\Debug\netcoreapp2.1\test_1_vettori.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\obj\Debug\netcoreapp2.1\test_1_vettori.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\obj\Debug\netcoreapp2.1\test_1_vettori.AssemblyInfo.cs
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\obj\Debug\netcoreapp2.1\test_1_vettori.dll
+C:\Users\admin\Documents\Programmi C#\test_1_vettori\obj\Debug\netcoreapp2.1\test_1_vettori.pdb

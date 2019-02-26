@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Programmi C#\quarto\bin\Debug\netcoreapp2.1\quarto.deps.json
+C:\Users\admin\Documents\Programmi C#\quarto\bin\Debug\netcoreapp2.1\quarto.runtimeconfig.json
+C:\Users\admin\Documents\Programmi C#\quarto\bin\Debug\netcoreapp2.1\quarto.runtimeconfig.dev.json
+C:\Users\admin\Documents\Programmi C#\quarto\bin\Debug\netcoreapp2.1\quarto.dll
+C:\Users\admin\Documents\Programmi C#\quarto\bin\Debug\netcoreapp2.1\quarto.pdb
+C:\Users\admin\Documents\Programmi C#\quarto\obj\Debug\netcoreapp2.1\quarto.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Programmi C#\quarto\obj\Debug\netcoreapp2.1\quarto.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Programmi C#\quarto\obj\Debug\netcoreapp2.1\quarto.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Programmi C#\quarto\obj\Debug\netcoreapp2.1\quarto.AssemblyInfo.cs
+C:\Users\admin\Documents\Programmi C#\quarto\obj\Debug\netcoreapp2.1\quarto.dll
+C:\Users\admin\Documents\Programmi C#\quarto\obj\Debug\netcoreapp2.1\quarto.pdb

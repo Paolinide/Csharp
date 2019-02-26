@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_1/prova_1.csproj",
+      "projectUniqueName": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/prova_1/prova_1.csproj",
       "projectName": "prova_1",
-      "projectPath": "/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_1/prova_1.csproj",
+      "projectPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/prova_1/prova_1.csproj",
       "packagesPath": "/Users/jeanpaul/.nuget/packages/",
-      "outputPath": "/Users/jeanpaul/Documents/Dam/C#/Progetti/prova_1/obj/",
+      "outputPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/prova_1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

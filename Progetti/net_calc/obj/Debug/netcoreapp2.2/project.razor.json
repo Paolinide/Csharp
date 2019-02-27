@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "ProjectFilePath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/net_calc/net_calc.csproj",
+=======
+  "ProjectFilePath": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\net_calc\\net_calc.csproj",
+>>>>>>> 18efbccea1ffc53e1c55742aff859f37c39c317c
   "TargetFramework": "netcoreapp2.2",
   "TagHelpers": [],
   "Configuration": null

@@ -130,7 +130,31 @@ namespace net_calc
             Console.WriteLine();
             return;
 
-            Console.Clear();
+
+            // aggiungere un divisore tipo /barra rete principale diviso 300
+
+            int[] pows = { 20,21,22,23, 24, 25, 26, 27, 28, 29, 30 };
+
+            int n = 0, m = 20;
+
+            for (int j = 0; j < pows.Length; j++)
+
+                n += (int)Math.Sqrt(Math.Pow(2, (31 - m - j)));
+
+            string nm = " Rete generale ";
+
+            Console.WriteLine(("----- " + nm + " ").PadRight(n, '-'));
+
+            for (int j = 0; j < pows.Length; j++)
+
+                Console.Write(("" + "ABCDEFGHIJKLMNO"[j]).PadRight((int)Math.Sqrt(Math.Pow(2, (31 - pows[j]))), '·'));
+
+            Console.WriteLine();
+
+            //return;
+
+
+            //Console.Clear();
 
             // SCEGLIAMO UNA MODALITA' DI INSERIMENTO DEI DATI
             Console.Write("Digita 1 per creare un set di reti casuali, 2 per un set predefinito o qualsiasi altro per inserire i dati manualmente: ");
@@ -313,12 +337,13 @@ namespace net_calc
             return caso.Next(entro);
         }
 
-
         static public string Converti(int valore, int aBase = 2, int daBase = 10)
         {
             String numero = Convert.ToString(valore);
             return Convert.ToString(Convert.ToInt32(numero, daBase), aBase);
         }
+
+        
 
 
 
@@ -381,7 +406,7 @@ namespace net_calc
                 for (int i = 0; i < 8; i++) // cicliamo nella quartina
                     valore[i + q * 8] = binario[i] == '1'; // assegnamo il vaolre corretto al relativo bit del vettore 'valore'
             }
-            public int quantiBitServono(int necessari) // valutiamo quanti bit servono per un certo numero di posti
+            static public int quantiBitServono(int necessari) // valutiamo quanti bit servono per un certo numero di posti
             {
                 for (int i = 2; i < 32; i++)
                     if (Math.Pow(2, i) - 2 >= necessari) return i;

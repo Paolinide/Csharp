@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/net_calc.csproj"
+                "${workspaceFolder}/net_calc3.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

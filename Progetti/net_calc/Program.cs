@@ -118,6 +118,17 @@ namespace net_calc
             }
 
             */
+            // aggiungere un divisore tipo /barra rete principale diviso 300
+            int[] pows = { 20,21,22,23, 24, 25, 26, 27, 28, 29, 30 };
+            int n = 0, m = 20;
+            for (int j = 0; j < pows.Length; j++)
+                n += (int)Math.Sqrt(Math.Pow(2, (31 - m - j)));
+            string nm = " Rete generale ";
+            Console.WriteLine(("***** " + nm + " ").PadRight(n, '*'));
+            for (int j = 0; j < pows.Length; j++)
+                Console.Write(("" + "ABCDEFGHIJKLMNO"[j]).PadRight((int)Math.Sqrt(Math.Pow(2, (31 - pows[j]))), '·'));
+            Console.WriteLine();
+            return;
 
 
             // aggiungere un divisore tipo /barra rete principale diviso 300

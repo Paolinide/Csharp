@@ -1,0 +1,14 @@
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\bin\Debug\netcoreapp2.1\lambdaTest.deps.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\bin\Debug\netcoreapp2.1\lambdaTest.runtimeconfig.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\bin\Debug\netcoreapp2.1\lambdaTest.runtimeconfig.dev.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\bin\Debug\netcoreapp2.1\lambdaTest.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\bin\Debug\netcoreapp2.1\lambdaTest.pdb
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.RazorAssemblyInfo.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.RazorAssemblyInfo.cs
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.AssemblyInfo.cs
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.RazorTargetAssemblyInfo.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\lambdaTest\obj\Debug\netcoreapp2.1\lambdaTest.pdb

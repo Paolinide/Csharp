@@ -7,14 +7,13 @@ namespace net_calc3
         static void Main(string[] args)
         {
             Console.Clear();
-            byte[] ipvalue = { 255, 240, 0, 0 };
-            for (int i = 0; i < 4; i++)
-            {
-                //Console.WriteLine("/{0}: {1}^2-2 = {2}", i, (32 - i), Barra(i));
-                Console.Write("{0}{1}", (i == 0) ? "" : ".", ipvalue[i]);
-            }
-            Console.WriteLine("\n" + Barra(ipvalue));
+            byte[] ipvalue = { 254, 254, 254, 0 };
+            Stampa(ipvalue);
+            for (int i = 0; i < 10; i++)
+                Stampa(Sposta(ipvalue, 128));
+            //Console.WriteLine("\n" + Barra(ipvalue));
             return;
+            // ******************************************************************************************
             // ACQUISIZIONE INDIRIZZO IP
             int[] quartinaIP = { 192, 168, 30, 4 };
             //do
@@ -76,21 +75,20 @@ namespace net_calc3
             Console.WriteLine("/" + barra);
         }
 
-        static public byte[] Barra(byte value)
+        static public void Stampa(byte[] indirizzo)
         {
-            byte[] IpValue = { 240, 240, 240, 240 };
-            /*for (byte q = 0; q < 4; q++)
-                for (byte i = 0; i < 8; i++)
-                    if ((ipvalue[3 - q] / (Math.Pow(2, i))) % 2 == 1) return (byte)(32 - 8 * q - i);
-            return 0;*/
-            byte[] predefinito = { 128, 196, 225, 240, 248, 252, 254, 255 };
-            // primo quarteto da inistra (barra bassa molti utenti)
-            IpValue[0] = (value > 7) ? (byte)255 : predefinito[value];
-            IpValue[1] = (value > 7) ? (byte)255 : predefinito[value];
-            IpValue[2] = (value > 7) ? (byte)255 : predefinito[value];
-            // primo quarteto da destra (meno utenti barra alta)
-            IpValue[3] = (value > 7) ? (byte)255 : predefinito[value];
-            return IpValue;
+            for (int i = 0; i < 4; i++)
+                Console.Write("{1}{0}", (i == 3) ? "\n" : ".", indirizzo[i]);
+        }
+
+        static public byte[] Sposta(byte[] indirizzo, long varaiazione) // somma un certo avlore ad una quartina e ne restituisce il risultato
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                varaiazione = (byte)((varaiazione) / Math.Pow(256, i));
+                indirizzo[3 - i] += (byte)(((indirizzo[3 - i] + varaiazione) / 256) % 256);
+            }
+            return indirizzo;
         }
 
 
@@ -184,13 +182,17 @@ namespace net_calc3
 
             public byte this[int indice]
             { // si può accedere alle quartine tramite un indice
-                get { return 69; } // da 1 a 4 indirizzo ip e da 5 a 8 maschera
-                set { }
+                get { return (indice < 4) ? IpValue[indice] : MskValue[indice - 4]; } // da 1 a 4 indirizzo ip e da 5 a 8 maschera
+                set { if (indice < 4) IpValue[indice] = value; else MskValue[indice - 4] = value; }
             }
 
-            static public byte[] Sposta(byte[] indirizzo, uint valore) // somma un certo avlore ad una quartina e ne restituisce il risultato
+            static public byte[] Sposta(byte[] indirizzo, long valore) // somma un certo avlore ad una quartina e ne restituisce il risultato
             {
                 byte[] risultato = new byte[4];
+                indirizzo[0] += (byte)((valore / 256 * 256 * 256) % 256);
+                indirizzo[1] += (byte)((valore / 256 * 256) % 256);
+                indirizzo[2] += (byte)((valore / 256) % 256);
+                indirizzo[3] += (byte)((valore) % 256);
                 return risultato;
             }
 

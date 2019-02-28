@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\Programmi C#\\prova 2\\prova 2.csproj",
+      "projectUniqueName": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\prova 2\\prova 2.csproj",
       "projectName": "prova 2",
-      "projectPath": "C:\\Users\\admin\\Documents\\Programmi C#\\prova 2\\prova 2.csproj",
+      "projectPath": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\prova 2\\prova 2.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\Programmi C#\\prova 2\\obj\\",
+      "outputPath": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\prova 2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

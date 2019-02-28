@@ -6,6 +6,12 @@ namespace prova_2
     {
         static public void Main(string[] args)
         {
+
+
+            string str = "sticazzi";
+            for (int i=0; i<str.Length; i++)
+                if (str[i] == 'z') Console.Write("ciao");
+            return;
             Console.Clear();
             bool dentro = true;
             do

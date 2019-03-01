@@ -7,11 +7,10 @@ namespace net_calc3
         static void Main(string[] args)
         {
             Console.Clear();
+            Rete rete_0 = new Rete("Rete generale", 192,168,30,0, 8);
+            rete_0.Stampa();
             //*
-            byte[] ipvalue = { 192, 168, 95, 31 };
-            byte[] mskvalue = impostaMaschera(23);//{ 255, 255, 224, 0 };
-            Stampa(ipvalue);
-            Stampa(mskvalue);
+            
             //for (int i = 0; i < 10; i++)
             //  Stampa(ipvalue = Sposta(ipvalue, 128));
 
@@ -321,6 +320,8 @@ namespace net_calc3
             public void Stampa()
             {
                 // QUESTA STAMPA TUTTO IN SEQUENZA
+                Console.WriteLine(stringaIp);
+                Console.WriteLine(stringaMsk);
             }
 
         }

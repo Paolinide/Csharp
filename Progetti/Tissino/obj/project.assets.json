@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\net_calc3\\net_calc3.csproj",
-      "projectName": "net_calc3",
-      "projectPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\net_calc3\\net_calc3.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\Tissino\\Tissino.csproj",
+      "projectName": "Tissino",
+      "projectPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\Tissino\\Tissino.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\net_calc3\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\Tissino\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

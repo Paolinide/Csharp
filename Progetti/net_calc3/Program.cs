@@ -7,15 +7,20 @@ namespace net_calc3
         static void Main(string[] args)
         {
             Console.Clear();
-            byte[] ipvalue = { 254, 254, 254, 0 };
+            //*
+            byte[] ipvalue = { 192, 168, 95, 31 };
+            byte[] mskvalue = impostaMaschera(23);//{ 255, 255, 224, 0 };
             Stampa(ipvalue);
-            for (int i = 0; i < 10; i++)
-                Stampa(Sposta(ipvalue, 128));
+            Stampa(mskvalue);
+            //for (int i = 0; i < 10; i++)
+            //  Stampa(ipvalue = Sposta(ipvalue, 128));
+
             //Console.WriteLine("\n" + Barra(ipvalue));
             return;
+            //*/
             // ******************************************************************************************
             // ACQUISIZIONE INDIRIZZO IP
-            int[] quartinaIP = { 192, 168, 30, 4 };
+            int[] quartinaIP = { 192, 168, 25, 4 };
             //do
             //{
             Console.Write("Digita un indirizzo ip valido: ");
@@ -75,21 +80,29 @@ namespace net_calc3
             Console.WriteLine("/" + barra);
         }
 
+        static public byte[] impostaMaschera(byte value)
+        {
+            //Console.WriteLine(value);
+            byte[] IpValue = { 0, 0, 0, 0 };
+            byte[] predefinito = { 128, 196, 225, 240, 248, 252, 254, 255 };
+            for (int i = 0; i < 4; i++)
+            {
+                //Console.Write("{0}:{1}<{2}[{3}] * ", i, 8 * i, 8 * i + 7, value - 8 * i);
+                //if (value > 8 * i + 7) IpValue[i] = 255;
+                //else if (value < 8 * i) IpValue[i] = 0;
+                //else IpValue[i] = predefinito[value - 8 * i];
+                IpValue[i] = (byte)((value > 8 * i + 7) ? 255 : ((value < 8 * i + 1)) ? 0 : predefinito[value - 8 * i - 1]);
+            }
+            Console.WriteLine();
+            return IpValue;
+        }
+
         static public void Stampa(byte[] indirizzo)
         {
             for (int i = 0; i < 4; i++)
                 Console.Write("{1}{0}", (i == 3) ? "\n" : ".", indirizzo[i]);
         }
 
-        static public byte[] Sposta(byte[] indirizzo, long varaiazione) // somma un certo avlore ad una quartina e ne restituisce il risultato
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                varaiazione = (byte)((varaiazione) / Math.Pow(256, i));
-                indirizzo[3 - i] += (byte)(((indirizzo[3 - i] + varaiazione) / 256) % 256);
-            }
-            return indirizzo;
-        }
 
 
 
@@ -100,6 +113,7 @@ namespace net_calc3
             string nome = "Rete Senza Nome";
             byte[] ipValue = { 192, 168, 0, 0 };
             byte[] mskValue = { 255, 255, 255, 0 };
+            // OLTRE AL COSTRUTTORE DI DEFAULT C'E' UN'AMPIA SCELTA DI ALTERNATIVE
             public Rete() { }
             public Rete(string nome, string indirizzoIP, string maschera)
             {
@@ -149,25 +163,35 @@ namespace net_calc3
                 ipValue = quart;
                 this.utenti = utenti;
             }
-            static public byte quantoGrande(uint utenti) // In che barra deve essere la maschera per il numero di utenti
+            ~Rete() // Non so ancora come, ma forse potrebbe servire anche un distruttore
             {
-                for (byte i = 2; i < 32; i++)
-                    if (Math.Pow(2, i) - 2 >= utenti) return (byte)(32 - i);
-                return 0;
+                Console.WriteLine("La rete '{0}' è appena stata eliminata.", this.Nome);
+            }
+            static public byte quantoGrande(uint utenti) // In che barra deve essere la maschera per gestire un certo numero di utenti
+            {
+                for (byte i = 2; i < 32; i++) // proviamo i CIDR partendo da quello con meno utenti
+                    if (Math.Pow(2, i) - 2 >= utenti) return (byte)(32 - i); // il primo che offre abbastanza utenze è quello buono
+                return 0; // altrimenti qualcosa non va
             }
             public byte barra
-            { // Legge ed imposta la maschera passando il CIDR
+            { // Legge ed imposta la maschera passando il famigerato CIDR
                 get
                 {
-                    for (byte q = 0; q < 4; q++)
-                        for (byte i = 0; i < 8; i++)
-                            if ((IpValue[3 - q] / (Math.Pow(2, i))) % 2 == 1) return (byte)(32 - 8 * q - i);
-                    return 0;
+                    for (byte q = 0; q < 4; q++) // cicliamo tra le quartine
+                        for (byte i = 0; i < 8; i++) // cicliamo tra i bit del quartino
+                            if ((IpValue[3 - q] / (Math.Pow(2, i))) % 2 == 1) return (byte)(32 - 8 * q - i); // cerchiamo il primo bit a 1, li si ferma la barra
+                    return 0; // non dovrebbe capitare, ma nel caso si esca dal ciclo senza trovare un bit a 1
                 }
                 set
                 {
-                    byte[] predefinito = { 128, 196, 225, 240, 248, 252, 254, 255 };
-                    IpValue[0] = (value > 7) ? (byte)255 : predefinito[value];
+                    byte[] predefinito = { 128, 196, 225, 240, 248, 252, 254 }; // non serve calcolare ogni volta il valore del byte, tanto le opzioni sone poche
+                    for (int i = 0; i < 4; i++) // si valuta byte per byte se il valore passato è entro i limiti di quel quatino
+                        IpValue[i] = (byte)((value > 8 * i + 7) ? 255 : ((value < 8 * i + 1)) ? 0 : predefinito[value - 8 * i - 1]); // e gli si assegna il valore corrispondente
+                    // Con gli if..else il codice è più leggibile, ma una volta verificato si può tranquillamente usare l'operatore ternario annidandone uno nell'altro
+                    //Console.Write("{0}:{1}<{2}[{3}] * ", i, 8 * i, 8 * i + 7, value - 8 * i);
+                    //if (value > 8 * i + 7) IpValue[i] = 255;
+                    //else if (value < 8 * i) IpValue[i] = 0;
+                    //else IpValue[i] = predefinito[value - 8 * i];
                 }
             }
             public uint utenti
@@ -175,38 +199,51 @@ namespace net_calc3
                 get => (uint)Math.Pow(2, 32 - barra) - 2;
                 set => barra = quantoGrande(value);
             }
-
+            // Portando fuori le funzioni di get e set si possono impostare delle limitazioni o delle verifiche sui dati
             public string Nome { get => nome; set => nome = value; }
             public byte[] IpValue { get => ipValue; set => ipValue = value; }
             public byte[] MskValue { get => mskValue; set => mskValue = value; }
-
-            public byte this[int indice]
-            { // si può accedere alle quartine tramite un indice
-                get { return (indice < 4) ? IpValue[indice] : MskValue[indice - 4]; } // da 1 a 4 indirizzo ip e da 5 a 8 maschera
-                set { if (indice < 4) IpValue[indice] = value; else MskValue[indice - 4] = value; }
+            // in generale indicizzare una classe è molto fico
+            public byte this[int indice] // si può accedere alle quartine tramite un indice
+            { // da 1 a 4 è l'ip, da 5 a 8 la maschera, partiamo dall'indice 1 per rendere l'approccio più amichevole all'utente
+                get { return (--indice < 4) ? IpValue[indice] : MskValue[indice - 4]; } // da 1 a 4 indirizzo ip e da 5 a 8 maschera
+                set { if (--indice < 4) IpValue[indice] = value; else MskValue[indice - 4] = value; }
+            } // comandi sulla stessa riga per rendere il codice più compatto, comunque in questo caso si legge bene lo stesso
+            // Una funzione per spostare il valore di tutta una quartina di un tot, in avanti o in dietro, può sempre far comodo
+            // Naturalmente tutte le funzioni 'utility' vanno definite come static perché indipendenti dalla singola istanza
+            static public byte[] Sposta(byte[] indirizzo, long varaiazione) // somma un certo avlore ad una quartina e ne restituisce il risultato
+            { // avere delle 'utility' permette di ridurre un metodo a poche righe di comando, o anche ad una sola, rendendolo più chiaro e facile da manutenere
+                return LongToIp(varaiazione + IptoLong(indirizzo));
             }
-
-            static public byte[] Sposta(byte[] indirizzo, long valore) // somma un certo avlore ad una quartina e ne restituisce il risultato
+            // Le trasformazioni dei tipi di dato sono sempre comode per non dover duplicare il codice all'interno di una classe
+            static public long IptoLong(byte[] valore) // conversione di 4 byte separati ad un int di 4 byte
             {
-                byte[] risultato = new byte[4];
-                indirizzo[0] += (byte)((valore / 256 * 256 * 256) % 256);
-                indirizzo[1] += (byte)((valore / 256 * 256) % 256);
-                indirizzo[2] += (byte)((valore / 256) % 256);
-                indirizzo[3] += (byte)((valore) % 256);
+                long risultato = 0;
+                for (int i = 0; i < 4; i++)
+                    risultato += valore[i] * (long)Math.Pow(256, 3 - i);
                 return risultato;
             }
-
+            static public byte[] LongToIp(long valore)  // conversione da un int di 4 byte ad 4 byte separati
+            {
+                byte[] risultato = { 0, 0, 0, 0 };
+                for (int i = 0; i < 4; i++)
+                    risultato[i] = (byte)((valore / Math.Pow(256, 3 - i)) % 256);
+                return risultato;
+            }
+            // ADESSO LA SERIE DI FUNZIONI PER IL TRATTAMENTO DEI VALORI PRINCIPALI
             static public byte[] Maschera(byte[] indirizzo, byte[] maschera) // applica la maschera all'indirizzo e restituisce il risultato
             {
-                byte[] risultato = new byte[4];
-                return risultato;
+                for (int i = 0; i < 4; i++)
+                    indirizzo[i] = (byte)(indirizzo[i] & maschera[i]);
+                return indirizzo;
             }
+            // selezione di un valore importante
             public byte[] rete => Maschera(ipValue, mskValue);
             public byte[] primo => Sposta(rete, 1);
             public byte[] ultimo => Sposta(rete, utenti);
             public byte[] gateway => Sposta(ultimo, 1);
             public byte[] prossimo => Sposta(ultimo, 2);
-
+            // ANCORA CONVERSIONE DI DATI IN STRINGHE NEI VARI FORMATI
             public string stringaIp
             {
                 get => ipValue[0] + "." + ipValue[1] + "." + ipValue[2] + "." + ipValue[3];
@@ -227,15 +264,18 @@ namespace net_calc3
                         byte.TryParse(str[i], out MskValue[i]);
                 }
             }
-            public string stringaIpBinario()
+            static public string StringaToBinario(byte[] valore)
             {
-                return Convert.ToString(ipValue[0], 2).PadLeft(8, '0')
-                + "." + Convert.ToString(ipValue[1], 2).PadLeft(8, '0')
-                 + "." + Convert.ToString(ipValue[2], 2).PadLeft(8, '0')
-                  + "." + Convert.ToString(ipValue[3], 2).PadLeft(8, '0');
+                return Convert.ToString(valore[0], 2).PadLeft(8, '0')
+                + "." + Convert.ToString(valore[1], 2).PadLeft(8, '0')
+                 + "." + Convert.ToString(valore[2], 2).PadLeft(8, '0')
+                  + "." + Convert.ToString(valore[3], 2).PadLeft(8, '0');
             }
+            public string StringaIpBinario() { return StringaToBinario(ipValue); }
+            public string StringaMskBinario() { return StringaToBinario(mskValue); }
+            // STAMPA A CONSOLE DEI VALORI PRINCIPALI
             public void StampaIpQuartina() { Console.Write("Ip: " + stringaIp); }
-            public void StampaIpBinario() { Console.Write("Ip: " + stringaIpBinario()); }
+            public void StampaIpBinario() { Console.Write("Ip: " + StringaIpBinario()); }
 
             public string stringaQuartina(int filtro = 0)
             {

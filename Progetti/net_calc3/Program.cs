@@ -7,14 +7,21 @@ namespace net_calc3
         static void Main(string[] args)
         {
             Console.Clear();
-            Rete rete_0 = new Rete("Rete generale", 192, 168, 30, 0, barra: 16);
+            byte[] ip = { 192, 168, 23, 46 };
+            Rete rete_0 = new Rete("Rete generale", ip, barra: 16);
             rete_0.Stampa();
-            Rete[] listaReti = new Rete[5];
+            // VEDIAMO DI INTEGRARE LA GENERAZIONE DI SOTTORETI
+            // ALL'INTERNO DELL'ISTANZA RETE()
+            // A PARTIRE DAL NOME(opzionale) E DAL NUMERO DI HOST
+            Rete[] listaReti = new Rete[10];
             for (int i = 0; i < listaReti.Length; i++)
-                listaReti[i] = new Rete("" + "ABCDEFGHIJK"[i], 0, 0, 0, 0, utenti: (uint)(1 + Math.Pow(10, Dado(5))));
+                listaReti[i] = new Rete("" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[i], rete_0.IpValue, utenti: (uint)(1 + Math.Pow(10, Dado(6))));
             Rete.Riordina(ref listaReti);
             for (int i = 0; i < listaReti.Length; i++)
-                listaReti[i].Stampa();
+                listaReti[i].Stampa(false);
+            Console.WriteLine();
+            listaReti[listaReti.Length-1].StampaStringa(4, true); 
+            Console.WriteLine();
             //*
 
             //for (int i = 0; i < 10; i++)
@@ -263,7 +270,7 @@ namespace net_calc3
             public byte[] rete => Maschera(ipValue, mskValue);
             public byte[] primo => Sposta(rete, 1);
             public byte[] ultimo => Sposta(rete, utenti);
-            public byte[] gateway => Sposta(ultimo, 1);
+            public byte[] broadcast => Sposta(ultimo, 1);
             public byte[] prossimo => Sposta(ultimo, 2);
             // ANCORA CONVERSIONE DI DATI IN STRINGHE NEI VARI FORMATI
             public string stringaIp
@@ -304,12 +311,12 @@ namespace net_calc3
                 byte[] value = new byte[4] { 0, 0, 0, 0 };
                 switch (filtro)
                 {
-                    case -2: value = mskValue; break;
-                    case -1: value = ipValue; break;
+                    case -2: value = ipValue; break;
+                    case -1: value = mskValue; break;
                     case 0: value = rete; break;
                     case 1: value = primo; break;
                     case 2: value = ultimo; break;
-                    case 3: value = gateway; break;
+                    case 3: value = broadcast; break;
                     case 4: value = prossimo; break;
                 }
                 return value[0].ToString().PadLeft(3, '0') + "." + value[1].ToString().PadLeft(3, '0') + "." + value[2].ToString().PadLeft(3, '0') + "." + value[3].ToString().PadLeft(3, '0');
@@ -319,12 +326,12 @@ namespace net_calc3
                 byte[] value = new byte[4] { 0, 0, 0, 0 };
                 switch (filtro)
                 {
-                    case -2: value = mskValue; break;
-                    case -1: value = ipValue; break;
+                    case -2: value = ipValue; break;
+                    case -1: value = mskValue; break;
                     case 0: value = rete; break;
                     case 1: value = primo; break;
                     case 2: value = ultimo; break;
-                    case 3: value = gateway; break;
+                    case 3: value = broadcast; break;
                     case 4: value = prossimo; break;
                 }
                 return Convert.ToString(value[0], 2).PadLeft(8, '0')
@@ -332,22 +339,25 @@ namespace net_calc3
                  + "." + Convert.ToString(value[2], 2).PadLeft(8, '0')
                   + "." + Convert.ToString(value[3], 2).PadLeft(8, '0');
             }
+            // -3: nome, -2: Indirizzo ip, -1: maschera, 0: rete, 1: primo host, 2: ultimo host, 3: broadcast, 4: prossimo
             public void StampaStringa(int filtro = 0, bool giustifica = false)
             { // Stampiamo il nome del valore e poi le sue varie versioni
-                if (filtro == -2) Console.Write("{0}Nome: '{1}'\n", (giustifica) ? "        " : "", nome);
-                string[] lista = { "Maschera", "Indirizzo ip", "Rete", "Primo", "Ultimo", "Gateway", "Prossimo" };
-                if (!giustifica) Console.Write("{0}: {1} - {2}{3}", lista[filtro + 2], stringaQuartina(filtro), stringaBinario(filtro), (filtro == -2) ? " /" + barra + "(" + utenti + ")" : "");
-                else Console.Write("{0,12}: {1} - {2}{3}", lista[filtro + 2], stringaQuartina(filtro), stringaBinario(filtro), (filtro == -2) ? " /" + barra + "(" + utenti + ")" : "");
+                if (filtro == -3) { Console.Write("{0}Nome: '{1}'", (giustifica) ? "        " : "", nome); return; }
+                string[] lista = { "Indirizzo ip", "Maschera", "Rete", "Primo", "Ultimo", "Broadcast", "Prossimo" };
+                if (!giustifica) Console.Write("{0}: {1} - {2}{3}", lista[filtro + 2], stringaQuartina(filtro), stringaBinario(filtro), (filtro == -1) ? " /" + barra + "(" + utenti + ")" : "");
+                else Console.Write("{0,12}: {1} - {2}{3}", lista[filtro + 2], stringaQuartina(filtro), stringaBinario(filtro), (filtro == -1) ? " /" + barra + "(" + utenti + ")" : "");
             }
 
-            public void Stampa()
+            public void Stampa(bool tutto = true)
             {
-                // QUESTA STAMPA TUTTO IN SEQUENZA
-                for (int i = -2; i < 5; i++)
-                {
-                    StampaStringa(i, true);
-                    Console.WriteLine();
-                }
+                StampaStringa(-3, true); Console.WriteLine(); // nome
+                StampaStringa(-2, true); Console.WriteLine(); // ip
+                StampaStringa(-1, true); Console.WriteLine(); // maschera
+                if (tutto) { StampaStringa(0, true); Console.WriteLine(); } // rete
+                if (tutto) { StampaStringa(1, true); Console.WriteLine(); } // primo
+                if (tutto) { StampaStringa(2, true); Console.WriteLine(); } // ultimo
+                StampaStringa(3, true); Console.WriteLine(); // broadcast
+                if (tutto) { StampaStringa(4, true); Console.WriteLine(); } // prossimo
             }
 
         }

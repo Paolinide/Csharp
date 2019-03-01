@@ -7,10 +7,16 @@ namespace net_calc3
         static void Main(string[] args)
         {
             Console.Clear();
-            Rete rete_0 = new Rete("Rete generale", 192,168,30,0, 8);
+            Rete rete_0 = new Rete("Rete generale", 192, 168, 30, 0, barra: 16);
             rete_0.Stampa();
+            Rete[] listaReti = new Rete[5];
+            for (int i = 0; i < listaReti.Length; i++)
+                listaReti[i] = new Rete("" + "ABCDEFGHIJK"[i], 0, 0, 0, 0, utenti: (uint)(1 + Math.Pow(10, Dado(5))));
+            Rete.Riordina(ref listaReti);
+            for (int i = 0; i < listaReti.Length; i++)
+                listaReti[i].Stampa();
             //*
-            
+
             //for (int i = 0; i < 10; i++)
             //  Stampa(ipvalue = Sposta(ipvalue, 128));
 
@@ -96,10 +102,12 @@ namespace net_calc3
             return IpValue;
         }
 
-        static public void Stampa(byte[] indirizzo)
+
+
+        static public int Dado(int max)
         {
-            for (int i = 0; i < 4; i++)
-                Console.Write("{1}{0}", (i == 3) ? "\n" : ".", indirizzo[i]);
+            Random casuale = new Random();
+            return casuale.Next(max);
         }
 
 
@@ -178,14 +186,14 @@ namespace net_calc3
                 {
                     for (byte q = 0; q < 4; q++) // cicliamo tra le quartine
                         for (byte i = 0; i < 8; i++) // cicliamo tra i bit del quartino
-                            if ((IpValue[3 - q] / (Math.Pow(2, i))) % 2 == 1) return (byte)(32 - 8 * q - i); // cerchiamo il primo bit a 1, li si ferma la barra
+                            if ((MskValue[3 - q] / (Math.Pow(2, i))) % 2 == 1) return (byte)(32 - 8 * q - i); // cerchiamo il primo bit a 1, li si ferma la barra
                     return 0; // non dovrebbe capitare, ma nel caso si esca dal ciclo senza trovare un bit a 1
                 }
                 set
                 {
                     byte[] predefinito = { 128, 196, 225, 240, 248, 252, 254 }; // non serve calcolare ogni volta il valore del byte, tanto le opzioni sone poche
                     for (int i = 0; i < 4; i++) // si valuta byte per byte se il valore passato è entro i limiti di quel quatino
-                        IpValue[i] = (byte)((value > 8 * i + 7) ? 255 : ((value < 8 * i + 1)) ? 0 : predefinito[value - 8 * i - 1]); // e gli si assegna il valore corrispondente
+                        MskValue[i] = (byte)((value > 8 * i + 7) ? 255 : ((value < 8 * i + 1)) ? 0 : predefinito[value - 8 * i - 1]); // e gli si assegna il valore corrispondente
                     // Con gli if..else il codice è più leggibile, ma una volta verificato si può tranquillamente usare l'operatore ternario annidandone uno nell'altro
                     //Console.Write("{0}:{1}<{2}[{3}] * ", i, 8 * i, 8 * i + 7, value - 8 * i);
                     //if (value > 8 * i + 7) IpValue[i] = 255;
@@ -210,6 +218,21 @@ namespace net_calc3
             } // comandi sulla stessa riga per rendere il codice più compatto, comunque in questo caso si legge bene lo stesso
             // Una funzione per spostare il valore di tutta una quartina di un tot, in avanti o in dietro, può sempre far comodo
             // Naturalmente tutte le funzioni 'utility' vanno definite come static perché indipendenti dalla singola istanza
+            static public void Riordina(ref Rete[] lista)
+            {
+                for (int j = 0; j < lista.Length - 1; j++)
+                    for (int i = 0; i < lista.Length - 1 - j; i++)
+                        if (lista[i].utenti < lista[i + 1].utenti) Scambia(ref lista[i], ref lista[i + 1]);
+                for (int j = 0; j < lista.Length - 1; j++)
+                    lista[j + 1].IpValue = lista[j].prossimo;
+
+            }
+            static public void Scambia<T>(ref T primo, ref T secondo)
+            {
+                T temp = primo;
+                primo = secondo;
+                secondo = temp;
+            }
             static public byte[] Sposta(byte[] indirizzo, long varaiazione) // somma un certo avlore ad una quartina e ne restituisce il risultato
             { // avere delle 'utility' permette di ridurre un metodo a poche righe di comando, o anche ad una sola, rendendolo più chiaro e facile da manutenere
                 return LongToIp(varaiazione + IptoLong(indirizzo));
@@ -289,7 +312,7 @@ namespace net_calc3
                     case 3: value = gateway; break;
                     case 4: value = prossimo; break;
                 }
-                return value[0] + "." + value[1] + "." + value[2] + "." + value[3];
+                return value[0].ToString().PadLeft(3, '0') + "." + value[1].ToString().PadLeft(3, '0') + "." + value[2].ToString().PadLeft(3, '0') + "." + value[3].ToString().PadLeft(3, '0');
             }
             public string stringaBinario(int filtro = 0)
             {
@@ -311,7 +334,7 @@ namespace net_calc3
             }
             public void StampaStringa(int filtro = 0, bool giustifica = false)
             { // Stampiamo il nome del valore e poi le sue varie versioni
-                if (filtro == -2) Console.Write("{0}Nome: {1}", (giustifica) ? "       " : "", nome);
+                if (filtro == -2) Console.Write("{0}Nome: '{1}'\n", (giustifica) ? "        " : "", nome);
                 string[] lista = { "Maschera", "Indirizzo ip", "Rete", "Primo", "Ultimo", "Gateway", "Prossimo" };
                 if (!giustifica) Console.Write("{0}: {1} - {2}{3}", lista[filtro + 2], stringaQuartina(filtro), stringaBinario(filtro), (filtro == -2) ? " /" + barra + "(" + utenti + ")" : "");
                 else Console.Write("{0,12}: {1} - {2}{3}", lista[filtro + 2], stringaQuartina(filtro), stringaBinario(filtro), (filtro == -2) ? " /" + barra + "(" + utenti + ")" : "");
@@ -320,8 +343,11 @@ namespace net_calc3
             public void Stampa()
             {
                 // QUESTA STAMPA TUTTO IN SEQUENZA
-                Console.WriteLine(stringaIp);
-                Console.WriteLine(stringaMsk);
+                for (int i = -2; i < 5; i++)
+                {
+                    StampaStringa(i, true);
+                    Console.WriteLine();
+                }
             }
 
         }

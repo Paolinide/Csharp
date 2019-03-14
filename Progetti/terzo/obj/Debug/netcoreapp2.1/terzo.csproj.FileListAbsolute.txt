@@ -1,0 +1,4 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/terzo/obj/Debug/netcoreapp2.1/terzo.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/terzo/obj/Debug/netcoreapp2.1/terzo.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/terzo/obj/Debug/netcoreapp2.1/terzo.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/terzo/obj/Debug/netcoreapp2.1/terzo.AssemblyInfo.cs

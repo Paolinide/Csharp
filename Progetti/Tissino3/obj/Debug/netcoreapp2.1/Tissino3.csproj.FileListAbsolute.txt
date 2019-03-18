@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\bin\Debug\netcoreapp2.1\Tissino3.deps.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\bin\Debug\netcoreapp2.1\Tissino3.runtimeconfig.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\bin\Debug\netcoreapp2.1\Tissino3.runtimeconfig.dev.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\bin\Debug\netcoreapp2.1\Tissino3.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\bin\Debug\netcoreapp2.1\Tissino3.pdb
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\obj\Debug\netcoreapp2.1\Tissino3.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\obj\Debug\netcoreapp2.1\Tissino3.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\obj\Debug\netcoreapp2.1\Tissino3.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\obj\Debug\netcoreapp2.1\Tissino3.AssemblyInfo.cs
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\obj\Debug\netcoreapp2.1\Tissino3.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino3\obj\Debug\netcoreapp2.1\Tissino3.pdb

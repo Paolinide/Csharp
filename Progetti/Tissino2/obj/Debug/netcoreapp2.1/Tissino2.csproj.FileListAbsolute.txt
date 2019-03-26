@@ -9,14 +9,3 @@
 /Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Tissino2/obj/Debug/netcoreapp2.1/Tissino2.AssemblyInfo.cs
 /Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Tissino2/obj/Debug/netcoreapp2.1/Tissino2.dll
 /Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Tissino2/obj/Debug/netcoreapp2.1/Tissino2.pdb
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\bin\Debug\netcoreapp2.1\Tissino2.deps.json
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\bin\Debug\netcoreapp2.1\Tissino2.runtimeconfig.json
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\bin\Debug\netcoreapp2.1\Tissino2.runtimeconfig.dev.json
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\bin\Debug\netcoreapp2.1\Tissino2.dll
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\bin\Debug\netcoreapp2.1\Tissino2.pdb
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\obj\Debug\netcoreapp2.1\Tissino2.csprojAssemblyReference.cache
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\obj\Debug\netcoreapp2.1\Tissino2.csproj.CoreCompileInputs.cache
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\obj\Debug\netcoreapp2.1\Tissino2.AssemblyInfoInputs.cache
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\obj\Debug\netcoreapp2.1\Tissino2.AssemblyInfo.cs
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\obj\Debug\netcoreapp2.1\Tissino2.dll
-C:\Users\admin\Documents\Codice\Csharp\Progetti\Tissino2\obj\Debug\netcoreapp2.1\Tissino2.pdb

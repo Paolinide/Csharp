@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\bin\Debug\netcoreapp2.1\sesto.deps.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\bin\Debug\netcoreapp2.1\sesto.runtimeconfig.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\bin\Debug\netcoreapp2.1\sesto.runtimeconfig.dev.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\bin\Debug\netcoreapp2.1\sesto.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\bin\Debug\netcoreapp2.1\sesto.pdb
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\obj\Debug\netcoreapp2.1\sesto.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\obj\Debug\netcoreapp2.1\sesto.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\obj\Debug\netcoreapp2.1\sesto.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\obj\Debug\netcoreapp2.1\sesto.AssemblyInfo.cs
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\obj\Debug\netcoreapp2.1\sesto.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\sesto\obj\Debug\netcoreapp2.1\sesto.pdb

@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\bin\Debug\netcoreapp2.1\settimo.deps.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\bin\Debug\netcoreapp2.1\settimo.runtimeconfig.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\bin\Debug\netcoreapp2.1\settimo.runtimeconfig.dev.json
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\bin\Debug\netcoreapp2.1\settimo.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\bin\Debug\netcoreapp2.1\settimo.pdb
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\obj\Debug\netcoreapp2.1\settimo.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\obj\Debug\netcoreapp2.1\settimo.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\obj\Debug\netcoreapp2.1\settimo.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\obj\Debug\netcoreapp2.1\settimo.AssemblyInfo.cs
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\obj\Debug\netcoreapp2.1\settimo.dll
+C:\Users\admin\Documents\Codice\Csharp\Progetti\settimo\obj\Debug\netcoreapp2.1\settimo.pdb

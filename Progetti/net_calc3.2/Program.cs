@@ -8,52 +8,7 @@ namespace net_calc3
     {
         static void Main(string[] args)
         {
-            //Console.Clear();
-            //int[] ints = { 10, 45, 15, 39, 21, 26 };
-            //var result = ints.OrderBy(g => g);
 
-            /*
-                Type type = typeof(ConsoleColor);
-                StampaColorato("Stringa Fantasma!!!\n", ConsoleColor.Black);
-                for (int i = 0; i < Enum.GetNames(type).Length; i++)
-                {
-                    var name = Enum.GetNames(type)[i];
-                    Console.BackgroundColor = (ConsoleColor)Enum.Parse(type, Enum.GetNames(type)[15-(i)]);
-                    Console.ForegroundColor = (ConsoleColor)Enum.Parse(type, name);
-                    Console.WriteLine(name);
-                }
-                Console.ResetColor();
-                byte[] MskValue = { 255, 255, 224, 0 };
-                StampaQuartina(MskValue);
-                for (byte i = 1; i < 33; i++)
-                {
-                    MskValue = setBarra((byte)(32 - i));
-                    uint utenti = (uint)(1 + Math.Pow(3, i - 1) - 2);
-                    //MskValue = setUtenti((byte)(utenti));
-                    //Console.WriteLine("{0,2}: {1,6}>>{2,6} {3} /{4}", i, utenti, getUtenti(MskValue), Stringa(MskValue), getBarra(MskValue));
-                    Console.WriteLine("{0,2}: {1} /{2,2}({3,13:#,##0})", i, Stringa(MskValue), getBarra(MskValue), utenti);
-                }
-                */
-            /*
-            int max = 0;
-            for (int i = 0; i < 500; i++)
-            {
-                int n1 = Dado(7), n2 = Dado(7), n3 = (int)(1 + Math.Pow(n1, n2));
-                max = Math.Max(max, n3);
-                Console.Write("{0} ^ {1} = {2, 5}{3}", n1, n2, (uint)n3, (i % 10 == 9) ? "\n" : "   ");
-            }
-            Console.WriteLine(max + " · " + (uint)(1 + Math.Pow(6, 6)));
-            */
-            //Console.Write("\nPremi INVIO per continuare o un altro tasto per terminare.");
-            //if (Console.ReadKey().Key != ConsoleKey.Enter) { Console.WriteLine(); return; }
-            /*
-            ConsoleKeyInfo tasto;
-            do
-            {
-                tasto = Console.ReadKey();
-                if (tasto.Key == ConsoleKey.Escape) { Console.WriteLine(); return; }
-            } while (tasto.Key != ConsoleKey.Enter);
-            */
             Console.Clear();
             byte[] ip = { 192, 169, 23, 46 };
             Rete rete_0 = new Rete("Rete Totale", ip, barra: 16);
@@ -61,50 +16,13 @@ namespace net_calc3
             StampaVettore(rete_0.IpValue);
             rete_0.setName("Rete Grandona").setCIDR(15).setStringIp("192.168.128.64");
             Console.WriteLine(rete_0.ToString());
-            /*
-            uint[] posti = new uint[5 + Dado(10)];//{ 5000, 600, 200, 10000 };
-            for (int i = 0; i < posti.Length; i++)
-                posti[i] = (uint)(1 + Math.Pow(Dado(7), Dado(7)));
-            rete_0.SottoReti(posti, new string[] { "Rete_0", "R1", "R2", "R3", "R4" });
-            */
+
             rete_0.SottoReti(new uint[] { 2, 4, 12000 }, new string[] { "piccola", "Granda", "Più Granda" });
             Console.WriteLine(rete_0.ToString());
             Console.WriteLine(rete_0.stringaIp);
             StampaVettore(rete_0.IpValue);
             rete_0.StampaRete();
             /*
-            string str = "a.0.0.0";
-            Console.WriteLine("{0} -> {2} = {1}", str, Rete.StringaToMsk(str, ref ip), string.Join(".", ip));
-            str = "255.0.0.269";
-            Console.WriteLine("{0} -> {2} = {1}", str, Rete.StringaToMsk(str, ref ip), string.Join(".", ip));
-            str = "-5.0.0.0";
-            Console.WriteLine("{0} -> {2} = {1}", str, Rete.StringaToMsk(str, ref ip), string.Join(".", ip));
-            str = "128.230.6.9";
-            Console.WriteLine("{0} -> {2} = {1}", str, Rete.StringaToMsk(str, ref ip), string.Join(".", ip));
-            str = "128.192.224.240";
-            Console.WriteLine("{0} -> {2} = {1}", str, Rete.StringaToMsk(str, ref ip), string.Join(".", ip));
-            return;
-            rete_0.Stampa();
-            // VEDIAMO DI INTEGRARE LA GENERAZIONE DI SOTTORETI
-            // ALL'INTERNO DELL'ISTANZA RETE()
-            // A PARTIRE DA UN ELENCO DI NOMI(opzionale) E DI NUMERO DI HOST(necessario)
-            Rete[] listaReti = new Rete[10];
-            for (int i = 0; i < listaReti.Length; i++)
-                listaReti[i] = new Rete("" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[i], rete_0.IpValue, utenti: (uint)(1 + Math.Pow(Dado(7), Dado(7))));
-            Rete.Riordina(ref listaReti);
-            for (int i = 0; i < listaReti.Length; i++)
-                listaReti[i].StampaInRiga();
-            //Console.WriteLine();
-            listaReti[listaReti.Length - 1].StampaStringa(4, true);
-            Console.WriteLine();
-            //*
-
-            //for (int i = 0; i < 10; i++)
-            //  Stampa(ipvalue = Sposta(ipvalue, 128));
-
-            //Console.WriteLine("\n" + Barra(ipvalue));
-            return;
-            //*
             // ******************************************************************************************
             // ACQUISIZIONE INDIRIZZO IP
             int[] quartinaIP = { 192, 168, 25, 4 };
@@ -133,24 +51,6 @@ namespace net_calc3
             for (int i = 0; i < 4; i++)
                 Console.Write("[{0}:{1}]", i, quartinaMSK[i]);
 
-            // ESERCIZIO 1 : SUB /8-/16-/24
-            // STAMPA DI TUTTI MEMBRI DELLA SOTTORETE
-            Console.WriteLine("\nStampiamo tutti gli host di questa rete.");
-            /*
-            for (int j2 = quartinaMSK[1]; j2 < 256; j2 += 15)
-                for (int j3 = quartinaMSK[2]; j3 < 256; j3 += 15)
-                    for (int j4 = 0; j4 < 256; j4++)
-                    {
-                        Console.WriteLine("{0}.{1}.{2}.{3}",
-                            quartinaIP[0],
-                                (quartinaMSK[1] == 0) ? j2 : quartinaIP[1],
-                                    (quartinaMSK[2] == 0) ? j3 : quartinaIP[2],
-                                        j4);
-                    }
-            *
-            // ESERCIZIO 2 : SUB QUALSIASI
-            // STAMPA DI TUTTI MEMBRI DELLA SOTTORETE
-            // Calcolare il numero di indirizzi possibili... (host disponibili=indirizzi-2)
             */
         }
 
@@ -165,13 +65,7 @@ namespace net_calc3
         }
 
 
-        static public byte getBarra(byte[] MskValue)
-        {
-            for (byte q = 0; q < 4; q++) // cicliamo tra le quartine
-                for (byte i = 0; i < 8; i++) // cicliamo tra i bit del quartino
-                    if ((MskValue[3 - q] / (Math.Pow(2, i))) % 2 == 1) return (byte)(32 - 8 * q - i); // cerchiamo il primo bit a 1, li si ferma la barra
-            return 0; // non dovrebbe capitare, ma nel caso si esca dal ciclo senza trovare un bit a 1
-        }
+
         static public byte[] setBarra(byte value)
         {
             byte[] MskValue = { 0, 0, 0, 0 };
@@ -180,53 +74,32 @@ namespace net_calc3
                 MskValue[i] = (byte)((value > 8 * i + 7) ? 255 : ((value < 8 * i + 1)) ? 0 : predefinito[value - 8 * i - 1]); // e gli si assegna il valore corrispondente
             return MskValue;
         }
-        static public uint getUtenti(byte[] indirizzo)
-        {
-            byte barra = getBarra(indirizzo);
-            int esponente = 32 - barra;
-            Console.Write("<[/{0}^{1}={2}]>", barra, esponente, Math.Pow(2, esponente) - 2);
-            //            Math.Pow(2, 32 - getBarra(indirizzo)) - 2
-            //return (uint)(Math.Pow(2, 32 - getBarra(indirizzo)) - 2);
-            return (uint)(Math.Pow(2, esponente) - 2);
-        }
-        static public byte[] setUtenti(uint value) => setBarra(quantoGrande(value));
-
-        static public byte quantoGrande(uint utenti) // In che barra deve essere la maschera per gestire un certo numero di utenti
-        {
-            for (byte i = 2; i < 32; i++) // proviamo i CIDR partendo da quello con meno utenti
-                if (Math.Pow(2, i) - 2 >= utenti) return (byte)(32 - i); // il primo che offre abbastanza utenze è quello buono
-            return 32; // altrimenti qualcosa non va
-        }
 
 
-
-
-
-        static public string Stringa(byte[] quartina)
-        {
-            string risultato = "";
-            for (int i = 0; i < 4; i++)
-                risultato += quartina[i].ToString().PadLeft(3, '0') + ((i == 3) ? "" : ".");
-            return risultato;
-        }
-        static public void StampaQuartina(byte[] quartina) => Console.Write(Stringa(quartina) + "\n");
         static public void StampaVettore<T>(T[] vettore)
         {
             for (int i = 0; i < vettore.Length; i++)
-            {
                 Console.Write("'{0}' ", vettore[i]);
-            }
             Console.WriteLine();
         }
-        static public int Dado(int max)
+        static public int Dado(int max) => new Random().Next(max);
+
+
+
+
+        public class IpNumberV4
         {
-            Random casuale = new Random();
-            return casuale.Next(max);
+            byte[] ipValue = { 192, 168, 0, 0 };
+
+            public byte[] IpValue { get => ipValue; set => ipValue = value; }
+            static public bool VerificaIpv4(byte[] ipValue) => (ipValue != null && ipValue.Length == 4);
+            public IpNumberV4(byte[] ip) { if (VerificaIpv4(ip)) IpValue = ip; }
         }
 
-
-
-
+        public class IpMaskV4 : IpNumberV4
+        {
+            override public byte[] IpValue { get => ipValue; set => ipValue = value; }
+        }
 
 
         public class Rete : Object, IEquatable<Rete>, IComparable<Rete>
@@ -600,7 +473,8 @@ namespace net_calc3
             }
 
             // OVERRIDE DEGLI OPERATORI BOOLEANI
-            public static Rete operator + (Rete sinistro, int valore) {
+            public static Rete operator +(Rete sinistro, int valore)
+            {
                 return sinistro;
             }
             //public static bool operator ==(Rete sinistro, Rete destro) => sinistro.CompareTo(destro) == 0;  // Uguale

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/net_calc3.csproj"
+                "${workspaceFolder}/settimo.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/net_calc3.csproj"
+                "${workspaceFolder}/settimo.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/net_calc3.csproj"
+                "${workspaceFolder}/settimo.csproj"
             ],
             "problemMatcher": "$tsc"
         }

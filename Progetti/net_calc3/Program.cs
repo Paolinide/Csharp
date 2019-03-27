@@ -55,6 +55,10 @@ namespace net_calc3
             } while (tasto.Key != ConsoleKey.Enter);
             */
             Console.Clear();
+
+            var prova = new ReeteIPv4();
+            Console.WriteLine(prova.ToString());
+
             byte[] ip = { 192, 169, 23, 46 };
             Rete rete_0 = new Rete("Rete Totale", ip, barra: 16);
             Console.WriteLine(rete_0.ToString());

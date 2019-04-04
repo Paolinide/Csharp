@@ -8,13 +8,13 @@ namespace settimo
         {
             Console.Clear();
             //Console.WriteLine("Hello World!");
-            var d = new Docente("Dino", "Risi");
+            var d = new Docente("DINO", "risi");
             d.Scrivi();
-            d.nome = "Daniele";
-            d.cognome = "Gobbo";
+            d.nome = "daniele";
+            d.cognome = "GOBBO";
             d.materia = "Informatica";
             d.Scrivi();
-            var a = new Allievo("Gino", "Ginetti");
+            var a = new Allievo("g", "g");
             a.Scrivi();
             var p = new Persona();
             p.Scrivi();
@@ -79,6 +79,7 @@ namespace settimo
 
         internal Allievo(string nome, string cognome) : base(nome, cognome)
         {
+            Console.WriteLine(nome+" - "+cognome);
             this.nome = nome;
             this.cognome = cognome;
             dataDiNascita = System.DateTime.Now;

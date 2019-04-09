@@ -1,0 +1,11 @@
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\bin\Debug\netcoreapp2.1\simpleWebScraper.deps.json
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\bin\Debug\netcoreapp2.1\simpleWebScraper.runtimeconfig.json
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\bin\Debug\netcoreapp2.1\simpleWebScraper.runtimeconfig.dev.json
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\bin\Debug\netcoreapp2.1\simpleWebScraper.dll
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\bin\Debug\netcoreapp2.1\simpleWebScraper.pdb
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\obj\Debug\netcoreapp2.1\simpleWebScraper.csprojAssemblyReference.cache
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\obj\Debug\netcoreapp2.1\simpleWebScraper.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\obj\Debug\netcoreapp2.1\simpleWebScraper.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\obj\Debug\netcoreapp2.1\simpleWebScraper.AssemblyInfo.cs
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\obj\Debug\netcoreapp2.1\simpleWebScraper.dll
+C:\Users\PC\Documents\PROGETTI C#\simpleWebScraper\obj\Debug\netcoreapp2.1\simpleWebScraper.pdb

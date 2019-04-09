@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{007C4B03-9288-4E2B-BC7B-63596BAB1959}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="person.cs">
+    <Files>
+      <File FileName="Program.cs" Line="19" Column="20" />
+      <File FileName="person.cs" Line="37" Column="32" />
+      <File FileName="personBuilder.cs" Line="64" Column="123" />
+      <File FileName="superperson.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="studio17" expanded="True">
+            <Node name="studio17" expanded="True">
+              <Node name="person.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.studio17 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

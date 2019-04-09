@@ -56,8 +56,8 @@ namespace net_calc3
             */
             Console.Clear();
 
-            var prova = new ReeteIPv4();
-            Console.WriteLine(prova.ToString());
+            var prova = new IPAddressV4();
+            prova.stampa();
 
             byte[] ip = { 192, 169, 23, 46 };
             Rete rete_0 = new Rete("Rete Totale", ip, barra: 16);
@@ -604,7 +604,8 @@ namespace net_calc3
             }
 
             // OVERRIDE DEGLI OPERATORI BOOLEANI
-            public static Rete operator + (Rete sinistro, int valore) {
+            public static Rete operator +(Rete sinistro, int valore)
+            {
                 return sinistro;
             }
             //public static bool operator ==(Rete sinistro, Rete destro) => sinistro.CompareTo(destro) == 0;  // Uguale

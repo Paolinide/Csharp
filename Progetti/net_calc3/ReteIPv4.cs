@@ -1,6 +1,7 @@
 using System;
 
-class ReeteIPv4
+class IPAddressV4
 {
-    override public string ToString() { return "Stringa di prova."; }
+    override public string ToString() { return "Indirizzo ip versione 4!"; }
+    public void stampa() { Console.WriteLine(ToString()); }
 }

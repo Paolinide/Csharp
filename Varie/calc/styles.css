@@ -1,0 +1,40 @@
+
+#txtDisplay{
+ float: left;
+ height: 100px;
+ width: 320px;
+ margin: 5px;
+ font-size: 2em;
+}
+
+.key,.tic{
+    border: 1px solid black;
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+    font-size: 2em;
+}
+    .key:hover{
+        background-color: #999;
+        color: #fff;
+        cursor: pointer;
+    }
+
+.key-op{
+    border-color: orange;
+}
+.key-hidden{
+    visibility: hidden;
+}
+.clear{
+    clear: both;
+}
+
+.red{
+    background-color: red;
+}
+.blu{
+    background-color: blue;
+}

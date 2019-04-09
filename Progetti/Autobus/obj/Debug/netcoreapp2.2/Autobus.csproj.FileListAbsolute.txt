@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/bin/Debug/netcoreapp2.2/Autobus.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/bin/Debug/netcoreapp2.2/Autobus.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/bin/Debug/netcoreapp2.2/Autobus.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/bin/Debug/netcoreapp2.2/Autobus.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/bin/Debug/netcoreapp2.2/Autobus.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/obj/Debug/netcoreapp2.2/Autobus.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/obj/Debug/netcoreapp2.2/Autobus.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/obj/Debug/netcoreapp2.2/Autobus.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/obj/Debug/netcoreapp2.2/Autobus.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/obj/Debug/netcoreapp2.2/Autobus.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/Autobus/obj/Debug/netcoreapp2.2/Autobus.pdb

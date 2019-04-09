@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/bin/Debug/netcoreapp2.2/ottavo.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/bin/Debug/netcoreapp2.2/ottavo.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/bin/Debug/netcoreapp2.2/ottavo.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/bin/Debug/netcoreapp2.2/ottavo.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/bin/Debug/netcoreapp2.2/ottavo.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/obj/Debug/netcoreapp2.2/ottavo.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/obj/Debug/netcoreapp2.2/ottavo.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/obj/Debug/netcoreapp2.2/ottavo.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/obj/Debug/netcoreapp2.2/ottavo.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/obj/Debug/netcoreapp2.2/ottavo.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/ottavo/obj/Debug/netcoreapp2.2/ottavo.pdb

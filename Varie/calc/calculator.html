@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calcolatrice</title>
+</head>
+<body>
+    
+    <input type="text" id="txtDisplay" readonly/>
+    <div class="key key-op" onclick="exec()">=</div>
+    <br class="clear">
+    <div class="key" onclick="pressNum('7')">7</div>
+    <div class="key" onclick="pressNum('8')">8</div>
+    <div class="key" onclick="pressNum('9')">9</div>
+    <div class="key key-op" onclick="pressOp('+')">+</div>
+    <br class="clear">
+    <div class="key" onclick="pressNum('4')">4</div>
+    <div class="key" onclick="pressNum('5')">5</div>
+    <div class="key" onclick="pressNum('6')">6</div>
+    <div class="key key-op" onclick="pressOp('-')">-</div>
+    <br class="clear">
+    <div class="key" onclick="pressNum('1')">1</div>
+    <div class="key" onclick="pressNum('2')">2</div>
+    <div class="key" onclick="pressNum('3')">3</div>
+    <div class="key key-op" onclick="pressOp('*')">*</div>
+    <br class="clear">
+    <div class="key key-hidden">&nbsp;</div>
+    <div class="key" onclick="pressNum('0')">0</div>
+    <div class="key key-hidden">&nbsp;</div>
+    <div class="key key-op" onclick="pressOp('/')">/</div>
+    <br>
+
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>

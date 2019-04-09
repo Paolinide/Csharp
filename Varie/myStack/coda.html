@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+
+<html>
+
+
+
+<head>
+  <meta charset="utf-8">
+
+
+  <link rel="stylesheet" href="./coda.css">
+
+  <title>La mia Queue</title>
+
+  <style>
+    #main {
+      width: 100%;
+      height: 400px border: 1px solid #c3c3c3c;
+
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    #main div {
+      width: 150px;
+      height: auto;
+      margin: 5px;
+      background: deepskyblue;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bold;
+    }
+  </style>
+  <!-- flex box utile a sem,plificare allineamento tra colonne -->
+</head>
+
+<body>
+  <form action="./main.js">
+    <div id="main">
+      <div style="background-color:aliceblue">
+        <label for="label1">A1</label>
+      </div>
+      <div style="background-color:antiquewhite">
+        <label for="A2">A2</label>
+      </div>
+      <div style="background-color:aquamarine">c</div>
+      <div style="background-color:bisque">d</div>
+      <div style="background-color:darkblue">e</div>
+      <div style="background-color:saddlebrown">f</div>
+    </div>
+
+    <input type="text" name="label1" id="enque" value="">
+    <label for="label1">A1</label>
+    <input type="submit" value="preleva">
+    <input type="submit" value="conta">
+    <input type="submit" value="accoda">
+
+  </form>
+
+
+</body>

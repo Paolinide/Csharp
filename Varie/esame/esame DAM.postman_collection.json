@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "4d9f3a81-0b51-48d7-978f-49f869771d54",
+		"name": "esame DAM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://127.0.0.1:3001/api/events",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "471f073e-265d-4715-9e9e-027c0f71e20a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjoyOCwidXNlcm5hbWUiOiJhYmMifSwiaWF0IjoxNTUzNDQ4ODUxfQ.4XBHivyrg6HIw45iIyLzIXm2RopkV62ExpzliY_7Ois",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"Location\":\"New York\", \"MaxUsers\":\"2100\" ,\"StartDate\":\"2/12/2019\",\"EndDate\":\"2/1/2019\",\"id\":\"26\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:3001/api/events",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "471f073e-265d-4715-9e9e-027c0f71e20a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjoyOCwidXNlcm5hbWUiOiJhYmMifSwiaWF0IjoxNTUzNDQ4ODUxfQ.4XBHivyrg6HIw45iIyLzIXm2RopkV62ExpzliY_7Ois",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"Location\":\"Pordenone\", \"MaxUsers\":\"2100\" ,\"StartDate\":\"2/12/2019\",\"EndDate\":\"2/1/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:3001/api/events",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "471f073e-265d-4715-9e9e-027c0f71e20a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjoyOCwidXNlcm5hbWUiOiJhYmMifSwiaWF0IjoxNTUzNDQ4ODUxfQ.4XBHivyrg6HIw45iIyLzIXm2RopkV62ExpzliY_7Ois",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"Location\":\"Pordenone\", \"MaxUsers\":\"2100\" ,\"StartDate\":\"2/12/2019\",\"EndDate\":\"2/1/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " http://127.0.0.1:3001/api/users/25",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "471f073e-265d-4715-9e9e-027c0f71e20a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjoyOCwidXNlcm5hbWUiOiJhYmMifSwiaWF0IjoxNTUzNDQ4ODUxfQ.4XBHivyrg6HIw45iIyLzIXm2RopkV62ExpzliY_7Ois",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"Location\":\"Pordenone\", \"MaxUsers\":\"2100\" ,\"StartDate\":\"2/12/2019\",\"EndDate\":\"2/1/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3001/api/users/25",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"users",
+						"25"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

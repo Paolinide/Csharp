@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Macintosh HD/Users/Shared/Sviluppo/C# CiSharp/prova_1/studio17/studio17.csproj",
+      "projectUniqueName": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/studio17.csproj",
       "projectName": "studio17",
-      "projectPath": "/Volumes/Macintosh HD/Users/Shared/Sviluppo/C# CiSharp/prova_1/studio17/studio17.csproj",
+      "projectPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/studio17.csproj",
       "packagesPath": "/Users/jeanpaul/.nuget/packages/",
-      "outputPath": "/Volumes/Macintosh HD/Users/Shared/Sviluppo/C# CiSharp/prova_1/studio17/obj/",
+      "outputPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

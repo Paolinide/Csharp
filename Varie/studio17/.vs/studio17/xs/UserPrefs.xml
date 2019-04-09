@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="person.cs">
     <Files>
       <File FileName="Program.cs" Line="19" Column="20" />
-      <File FileName="person.cs" Line="37" Column="32" />
       <File FileName="personBuilder.cs" Line="64" Column="123" />
       <File FileName="superperson.cs" Line="16" Column="1" />
+      <File FileName="person.cs" Line="72" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

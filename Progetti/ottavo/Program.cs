@@ -4,13 +4,13 @@ namespace ottavo
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Console.Clear();
-            Console.WriteLine(Paroloni("Hello World!").Replace('•', ''));
-            //Console.WriteLine(Caratterone('B').Replace('·', ' '));
-            //Console.WriteLine(Caratterone('d').Replace('·', ' '));
-        }
+        // static void Main(string[] args)
+        // {
+        //     Console.Clear();
+        //     Console.WriteLine(Paroloni("Hello World!").Replace('•', ''));
+        //     //Console.WriteLine(Caratterone('B').Replace('·', ' '));
+        //     //Console.WriteLine(Caratterone('d').Replace('·', ' '));
+        // }
 
         static public string Frasone(string stringa){
             string risultato = "";

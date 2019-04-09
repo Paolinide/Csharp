@@ -694,19 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Varie\\studio17\\studio17.csproj",
-      "projectName": "studio17",
-      "projectPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Varie\\studio17\\studio17.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\SimpleWebScraper\\SimpleWebScraper.csproj",
+      "projectName": "SimpleWebScraper",
+      "projectPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\SimpleWebScraper\\SimpleWebScraper.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Varie\\studio17\\obj\\",
-=======
-      "projectUniqueName": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/studio17.csproj",
-      "projectName": "studio17",
-      "projectPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/studio17.csproj",
-      "packagesPath": "/Users/jeanpaul/.nuget/packages/",
-      "outputPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/",
->>>>>>> 82aa8b182f12dee49556d6f52fdcd45bc7e2c3b4
+      "outputPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\SimpleWebScraper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

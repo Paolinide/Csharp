@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Varie\\studio17\\studio17.csproj",
-      "projectName": "studio17",
-      "projectPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Varie\\studio17\\studio17.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\Tissino_prova_1\\Tissino_prova_1.csproj",
+      "projectName": "Tissino_prova_1",
+      "projectPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\Tissino_prova_1\\Tissino_prova_1.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Varie\\studio17\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\Tissino_prova_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

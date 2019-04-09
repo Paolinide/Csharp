@@ -687,28 +687,30 @@
     ]
   },
   "packageFolders": {
-    "/Users/jeanpaul/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/settimo/settimo.csproj",
+      "projectUniqueName": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\settimo\\settimo.csproj",
       "projectName": "settimo",
-      "projectPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/settimo/settimo.csproj",
-      "packagesPath": "/Users/jeanpaul/.nuget/packages/",
-      "outputPath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/settimo/obj/",
+      "projectPath": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\settimo\\settimo.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\settimo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/jeanpaul/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -726,7 +728,6 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

@@ -20,3 +20,14 @@ C:/Users/PC/Documents/PROGETTI C#/studio17/obj/Debug/netcoreapp2.1/studio17.pdb
 /Volumes/Macintosh HD/Users/Shared/Sviluppo/C# CiSharp/prova_1/studio17/bin/Debug/netcoreapp2.1/studio17.runtimeconfig.dev.json
 /Volumes/Macintosh HD/Users/Shared/Sviluppo/C# CiSharp/prova_1/studio17/bin/Debug/netcoreapp2.1/studio17.dll
 /Volumes/Macintosh HD/Users/Shared/Sviluppo/C# CiSharp/prova_1/studio17/bin/Debug/netcoreapp2.1/studio17.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/bin/Debug/netcoreapp2.1/studio17.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/bin/Debug/netcoreapp2.1/studio17.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/bin/Debug/netcoreapp2.1/studio17.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/bin/Debug/netcoreapp2.1/studio17.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/bin/Debug/netcoreapp2.1/studio17.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/Debug/netcoreapp2.1/studio17.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/Debug/netcoreapp2.1/studio17.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/Debug/netcoreapp2.1/studio17.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/Debug/netcoreapp2.1/studio17.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/Debug/netcoreapp2.1/studio17.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/studio17/obj/Debug/netcoreapp2.1/studio17.pdb

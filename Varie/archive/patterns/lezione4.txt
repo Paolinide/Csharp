@@ -1,0 +1,124 @@
+testing esplorativo è efficace quando npn c'è abbastaza tempo per il testing approfondito, scrivere codice che testa
+il codice, vuol dire scrivere poco meno codice del sistema stesso
+
+posso misurare la complessità ciclomatica contando i rami decisionali  metrica McCabe,
+dovrei testare più del 95% (obiettivo minimo) nei sistemi critici si contano i 9 dopo la virgola (come in aws)
+ dei rami per essere criterio di stop oggettivo a livello procedurale
+e a livello componenti? (attenzione alle dipendenze)
+metrica del "design fatto bene" cioè che non ci siano dipendenze cicliche...
+la testabilitàè : è facile o difficile da testare?
+il test è: funziona o non fuinziona
+
+Mock ha inventato il sistema di testare i cicli: usare un componente con la stessa interfaccia di una dipendenza e 
+poi testare la classe dipendente, ma ha senso solo per cose molto critiche perchè è molto oneroso
+oppure si testa il ciclo come se fosse un componente unico.
+
+
+ingombro è il numero minimo di classi da cui una classe dipende direttamente od indirettamente, 
+nella stratificazione L0 viene asssegnato alle librerie, compilatore, sistema operativo .. non di bnostra 
+competenza
+in L1 ci stanno le classi che non chiama nessuna altra classe (punto o linea o rettangolo nell'esempio
+delle forme)
+anzi:
+L1  shape-------- ingombro 1
+L2 point---------  ingombro 2
+L3 circle-- ingombro 3, line--- 3
+L4 rect---- ingombro 4 
+il numero del livello è la lunghezza del cammino più lungo che lo porta a livello L1
+ingombreo è la classe più tutte le classi che da lui dipendono, si contano le frecce che escono anche
+dai figli ma non si contano le classi già contate+ la classe stessa
+più alto è l'ingiombro più difficile è da testare in isolamento
+l'ordine di test ovviamente è da L1 a Ln, allo stesso livello è indifferente
+il sistema nella sua interezza  ha "ingombro" 
+Cd component dependency = ingombro
+CCD cumulatice component dependencesie = sommatoria dell'ingombro delle classi
+metrica ACD= CCD/n   (average component dependencies
+l'ingombro medio (ACD), a parità di "design", è più basso se si usano i pattern, percgè sono ottimizzazioni
+per l'esame disegnamo uino schema, calcoliamo l'ingombro, ACD;CCD;CD poi cerchiamo dei pattern da applicare e ridisegnamo
+
+ACD tende a 1 allora OTTIMO
+ACD >10 allora refactoring obbligatorio!!
+
+
+
+in generale però non è il numero del livello, questo è un caso particolare
+
+
+ci si divide in gruppi e si prova ad usare il programma come dovrebbe essere usato ma
+facendo apposta a sbagliare gli input secondo alcune modalità:
+
+--il pigro
+
+apriamo il programma e facciamo finta di essere il pigro.. qual è l'azione che mi costa meno fatica
+per fare l'azione che voglio? per esempio il login: la maggior parte non è scritta bene:
+(lo scopo della schermata di login è quello di controllare chi entra) il pulsante di login è ABILITATO di default
+non ha senso che venga premuto se i campi sono vuoti.
+
+-- sabotatore: excursus netflix, dipendenza sistemate con i microservizi, ma alcuni servizi quando cadevano facevano
+   cadere altre cose, allora i dirigenti hanno inventato i sabotatori nascosti: 
+   ogni tanto buttavano giù qualche servizio a caso e un po' alla volta i programmatori scrivevano codice per 
+   ritiorae su in caso di down etc
+
+-- il malfidente  input strani, non standard e richiesti  cioè scrivere R0b3rt0 o "roberto" o 'roberto' o 
+   rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr  al posto di roberto 
+
+
+ci sono delle librerie che permettono di scrivere del codice di test, eseguirlo e contareù
+quante righe sono copertre dal test, segnalare tutte le righe che non sono state coperte dai test
+
+-------------------------------------------------------------------------------------------------------
+FIGATONA!!!!!
+pattern di comportamento(descrivere complessità algoritmica, descrivo una PROCEDURA complessa, come distribuisco il comportamento):
+cioè cambio un input (dashboard) e voglio che a cascata si modifichino altre cose
+non devo essere costretto a cambiare a mano tutto cuiò che dipende da questo
+lo deve fare in automatico.
+il dato è subject
+(creazione, struttura--utile per dare forma, per disaccopiiare )
+- observer (pagina 92 ) differenza con bridge è che questo ha SOLO UN collegamento tra le due gerarchie(che sono bbligatorie per separare astrazioni ed implementazioni)
+     con observer si collegano subjects con osservatori
+- startegy  incapsulare una famiglia in una gerarchia:
+
+programma di videoscrittura con salvataggio unico, proprieario, metodo save con le assunzioni sul formato
+se voglio usare più formati allora il metodo diventa più complesso:
+if (doc)
+	.....
+elseif (rtf)
+	....
+elseif (xml)
+	.....
+
+
+complessità sempre crescrente.
+io voglio spostare questo casino fuori dal metodo, in modo da far restare il metodo piccolo
+(i nomi sulle slide si riferidco no ad altro, non all'editor di testio)
+compositor sarebbe word)
+ecco il nome: ho diverse strategie per salvare!
+
+(visual studio è un editor che funziona sempre, l'inerfaccia utente non cambia anche se cambio
+il motore sotto, perchè VS ha implementato lo strategy, cioè diverse strategie di compilazione)
+lo strategy serve ad isolare
+quado abbiamo un algoritmo che dipende per casi, e dobbiamo evitare di mettere tuttti i casi in una unica procedura
+che li gestisce tutti
+meglio mettere una procedura che chiama in modo polimorfo ogni singolo caso
+la diff con bridge è che lo strategy è un bridge con un pilastro solo
+
+
+design pattern explained è la sua sxcelta
+poi pattern -oriented software architecture (1 tomo)
+
+soluzione di design di scala piccola
+poi i 5 per strutture molto complesse
+
+
+tema:
+
+costruire un videogioco: uscire da un labirinto
+
+descrivere in forma grafica una 
+vista delle classi e relazioni, 
+mostrare qualche pattern e 
+calcolatre ingombro
+
+esame mercoledi 17 pomeriggio, niente appunti, niente pc, solo carta e penna
+chiedi permesso per quel giorno che prendi 10!
+

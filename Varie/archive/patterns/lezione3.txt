@@ -1,0 +1,98 @@
+la complessità di un software i spuò misurare:
+si "sommano" i rami "if", se viene un numero sopra a 10 
+c'è bisogno di refactoring perchè troppo complesso
+
+
+singola responsabilità
+
+aperto             e    chiuso
+alle estensioni      alle modifiche
+per ereditarietà     
+
+sostiubilità di liskoff  
+
+
+se qualcosa è soggetto a modifiche allora lo incapsulerò in una gerarchia:
+EREDITARIETà!
+
+
+per controllare se la classe derivata sia corretta  usiamo la regola:
+
+...   IS A ....  (intuizione semantica)
+
+auto IS A dog?
+no! allora sbagliato, una classe derivata è tale quando è perfettamente sostituibole dalla
+classe base, deve essere equivaklente anche nell'implementazione, cioè se un cerchio deve disegnarsi ed
+invece calcola l'area non funziona.
+sostiubilità di liskoff  
+
+2 quantificatori universali:
+
+per ogni 
+
+myshape: "io so disegnarmi"
+
+qualcuno       fornisce e 
+qualcun altro  usa
+
+per far funzionare il collagamento ci deve essere un accordo:
+
+il nome del metodo "di scambio" deve essere garantito
+
+due classi che comunicano c'è sempre un contratto di chioamata:
+design by contract
+precondizione---- sul metodo di chiamata assunzioni di chiamata(parametri)
+post condizione-- sul valore di ritorno
+invariante------- 
+
+bad smell >< best practise
+
+classe base, consideriamo la FIRMA (parametri, assunzioni, stati)
+srivere nel codice una assert per le PRECONDIZIONI nella prima riga del metodo
+e nell'ultima un test sulla POSTCONDIZIONE
+
+
+setWidth(w)
+
+assert(w>=0)  (precondizione)
+assert(width>0 AND heigth>0)----
+				|
+width=w				|--  INVARIANTE
+				|
+assert(width>0 AND heigth>0)____|
+assert (width=w AND heigth.old=heigth.now)  POSTCONDITIONE
+pre base implica pre derivata
+al contrario
+post derivata implica post base
+invariante derivata implica nvariante base
+
+
+programmare ad oggetti vuol dire lavorare con i contratti
+se non è possibile la sovrapposizione almeno che siano compatibili
+quando fai ovverraide chiedere di meno ma garantire di più
+
+chiedere di meno vuol dire 
+
+regole
+intuizione, compliance (sintassi corretta), rispetto del contratto
+per verificare si fa come sopra: con le assert
+prima ti chiedo(pre)  e poi ti garantisco  (post)
+
+bridge
+andrea.baruzzo@gmail.com
+
+composizione vuol dire usare
+
+ereditare vuol dire essere un ....  usare reimplementando
+
+per ogni concetto che cambia uso una gerarchia
+se ho due dimensioni di cambiamento allora duie gerarcgioe
+
+indipendentemente dal variare su una dimensione posso variare l'altra
+
+
+curl -X POST http://127.0.0.1:5984/_replicate  -d '{"source":"http://127.0.0.1/ordini", "target":"http://admin:admin@127.0.0.1:5984/ordini2"}' -H "Content-Type: application/json"
+
+
+
+

@@ -1,0 +1,77 @@
+la caffettiera (teiera ) del masochista  [Don Norman]
+
+nel mondo fisico si può progettare qualcosa malissimo ma non tanto
+da essere inutilizzabili, troppo troppo male
+nel software si può scavalcare questo limite.
+
+I design pattern servono a dare schemi la cui forma suggerisce la funzione
+schemi generali, per esempio il maniglione antipanico non ha bisogno della scritta "spingee" 
+si capisce da solo
+
+primo libro sui pattern
+"Design Patterns, elements of reusable object oriented Solutions"
+https://sophia.javeriana.edu.co/~cbustaca/docencia/DSBP-2018-01/recursos/Erich%20Gamma,%20Richard%20Helm,%20Ralph%20Johnson,%20John%20M.%20Vlissides-Design%20Patterns_%20Elements%20of%20Reusable%20Object-Oriented%20Software%20%20-Addison-Wesley%20Professional%20%281994%29.pdf
+
+"The timeless way of living"
+https://archive.org/stream/TheTimelessWayOfBuilding/The_Timeless_Way_of_Building_Complete_djvu.txt
+"A pattern Language"
+
+"DOn't make me think" 
+
+Devo costruire una casa
+casa-- pattren
+una casa ha piani
+piano --- pattern
+un piano ha stanze-- pattern
+
+nome evocativo di una forma
+quasi tutto è un pattern
+
+nel 95 si ispirarono al desiogn pattern dell'architettura per progettare il software
+un pattern non è un'appliccazione, sono elementi di una applicazione
+
+concetti riusabili, cambia la forma ma il concetto di maniglia resta lo stesso, è un pattern
+
+se c'è bisogno di scrivere come usare allora non è fatta bene, 
+in un'interfaccia utente non dovrebbe esserci bisogno di spiegare cosa fanno i vari aggeggi
+nella form
+
+lunga "digressione" sul "ribbon" di office (dove ci sono tutte le icone per fare qualcosa, la
+vecchia tabella degli strumenti)
+
+il ribbon è un pattern... per lavori che seguono un workflow, una catena di montaggio.
+i pattern sono un modo standard di fare le cose ma se sbaglio pattern soo fregato:
+se devo costruire una cosa per USCIRE/ENTRARE in ua stanza ed uso il pattern della FINESTRA
+allora ho sbagliato il concetto.
+Pattern sono una ottimizzazione del progetto per portaere ad un più semèlice uso delle cose 
+
+
+i pattern sono una ottimiozzazione, non è che se non li jao snafgli, ma se li hai fai meglio
+
+esempio:
+la parola NEW per CREARE un oggetto forse npn è ottimale,
+pensiamo al new help-window e new point (pensiamo ad un videogioco qualsiasi)
+per costruire il menu c'è "tanta roba" che devo fare poche volte
+mentre costruire i punti pochissimo, quasi nulla complessità ma Tantissie volte
+quindi da una parte instanziazione banale ma miionate di volte contro instanziazione complessa da eseguire poche vilte
+
+new point2D p= new point2D(1,3.32, red)
+
+void MyFunction(point2D p){
+....
+}
+
+quando creo il punto viene messo nello heap,
+mentre quando chiamo la funzione il puto viene messo sullo stack
+(stack di attivazione)
+le strutture dati tipo il Program counter devono essere velocissime quindo "molto vicine" al processore
+cioè un registro
+poi ci sono le cache, dopo c'è la ram, poi i dischi meccanici (nella visione canonica)
+
+gerarchia di memorie per decidere dove mettere le cose,
+lo stack(poca memoria, si misura in K) è la memoria più veloce e costosa, se sbagli ad usarlo paghi molto.
+Il fattoriale mi mostra questa cosa: ad ogni chiamata aggiungi sullo stack, ma lo stack è limitato
+mentre lo heap non ha questo problema:  è tutta la ram meno alcune zone riservate, quindi si misura in Giga
+
+
+

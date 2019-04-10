@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/bin/Debug/netcoreapp2.2/SimpleWebScraper.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/bin/Debug/netcoreapp2.2/SimpleWebScraper.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/bin/Debug/netcoreapp2.2/SimpleWebScraper.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/bin/Debug/netcoreapp2.2/SimpleWebScraper.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/bin/Debug/netcoreapp2.2/SimpleWebScraper.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/obj/Debug/netcoreapp2.2/SimpleWebScraper.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/obj/Debug/netcoreapp2.2/SimpleWebScraper.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/obj/Debug/netcoreapp2.2/SimpleWebScraper.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/obj/Debug/netcoreapp2.2/SimpleWebScraper.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/obj/Debug/netcoreapp2.2/SimpleWebScraper.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/obj/Debug/netcoreapp2.2/SimpleWebScraper.pdb

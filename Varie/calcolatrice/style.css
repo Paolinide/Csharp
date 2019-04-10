@@ -49,9 +49,9 @@ input[type=text] {
     color:white;
 }
 
-.operator {
+/*.operator {
     visibility: hidden; 
-}
+}*/
 
 #calculator {
     width: 100%;

@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "c:\\Users\\admin\\Documents\\Codice\\Csharp\\Progetti\\SimpleWebScraper\\SimpleWebScraper.csproj",
+  "ProjectFilePath": "/Users/jeanpaul/Documents/Dam/C#/Csharp/Progetti/SimpleWebScraper/SimpleWebScraper.csproj",
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "UnsupportedRazor",
-    "LanguageVersion": "1.0",
-    "Extensions": [
-      {
-        "ExtensionName": "UnsupportedRazorExtension"
-      }
-    ]
-  }
+  "Configuration": null
 }

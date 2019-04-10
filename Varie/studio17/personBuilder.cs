@@ -21,7 +21,7 @@ namespace studio17
 
         private void SetDefault()
         {
-            // ovviamente questa è la persona creata con new pwrsonabuilder
+            // ovviamente questa è la persona creata con new personabuilder
             _firstName = "Mario";
             _lastName = "Rossi";
             _eyeColor = 153; // RGD

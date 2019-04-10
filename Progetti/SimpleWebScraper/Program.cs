@@ -28,6 +28,8 @@ namespace SimpleWebScraper
 
                 using (WebClient client = new WebClient()) // using e parentesi per liberare spazio una volta finito
                 {
+                    string indirizzo = $"http://{craigListCity.Replace(" ", string.Empty)}.craigList.org/{method}/{craigListCategory}";
+                    Console.WriteLine("<<<<<<<<<<<<<<<<<<<<<<" + indirizzo);
                     string content = client.DownloadString(
                                 $"http://{craigListCity.Replace(" ", string.Empty)}.craigList.org/{method}/{craigListCategory}");
                     ScrapeCriteria scrapeCriteria = new ScrapeCriteriaBuilder()
@@ -52,7 +54,7 @@ namespace SimpleWebScraper
                     {
                         foreach (var scrapedElement in scrapedElements)
                         {
-                            Console.WriteLine(scrapedElement);
+                            Console.WriteLine("• " + scrapedElement);
                         }
                     }
                     else
@@ -63,7 +65,7 @@ namespace SimpleWebScraper
             }
             catch (Exception ex)
             {
-               Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
             }
 
         }

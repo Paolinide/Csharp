@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SMinC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"   
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">Simple Minimal Calculator</h1>
+
+   
+    <div id='calc-contain'>
+
+        <form name="calculator">
+
+            <input type="text" id="display" name="display" color=#ffffff />
+            <br>
+
+            <hr>
+
+            <input type="button" id="b1" value=" 7 " onclick="sendDigit('7')" />
+            <input type="button" id="b2" value=" 8 " onclick="sendDigit('8')" />
+            <input type="button" id="b3" value=" 9 " onclick="sendDigit('9')" />
+            <input type="button" id="Sum" class="operator" value=" + " onclick="setOperator('+')" />
+            <br />
+
+            <input type="button" id="b4" value=" 4 " onclick="sendDigit('4')" />
+            <input type="button" id="b5" value=" 5 " onclick="sendDigit('5')" />
+            <input type="button" id="b6" value=" 6 " onclick="sendDigit('6')" />
+            <input type="button" id="Sub" class="operator" value=" - " onclick="setOperator('-')" />
+            </br>
+
+            <input type="button" id="b7" value=" 1 " onclick="sendDigit('1')" />
+            <input type="button" id="b8" value=" 2 " onclick="sendDigit('2')" />
+            <input type="button" id="b9" value=" 3 " onclick="sendDigit('3')" />
+            <input type="button" id="Mul" class="operator" value=" x " onclick="setOperator('x')" />
+            </br>
+
+            <input type="button" id="01" value=""class="placeHolder" disabled='true'/>
+            <input type="button" id="b0" value=" 0 " onclick="sendDigit('0')" />
+            <input type="button" id="comma" value=" , "  onclick="setComma()" />
+            <input type="button" id="Div" class="operator" value=" ÷ " onclick="setOperator('/')" />
+            </br>
+
+            <input type="button" id="c" value=" C " onclick="cancelDigit('1')" />
+            <input type="button" id="ca" value=" CA " onclick="cancelAll('2')" />
+            <input type="button" id="02" value=""class="placeHolder"/>
+            <input type="button" id="Res" id="calculate" value=" = "  onclick="setResult()" />
+            </br>
+
+
+        </form>
+        
+    </div>
+    
+ 
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+    // funzione usata solo per test, al momento non usata
+        function myresetCalculator() {
+            var b=document.getElementById("equal");
+            b.style.visibility="hidden";
+            
+        }
+        // # Step1
+        // alert, confirm 
+        // ...funzioni bloccanti
+        // ...quando viene eseguito il codice javascript
+        /*var name = prompt("Come ti chiami?");
+        alert("ciao " + name);
+
+        if(confirm("vuoi eseguire la somma?")){ 
+            var result = add(12, 34);
+            console.log && console.log(result);
+
+            alert("la somma di 12 + 34 è " + result);
+        }*/
+
+        // #Step 2
+        // recupero di elementi html
+        // funzioni richiamate al click
+        // interazione con il DOM della pagina in lettura e scrittura
+        var p = document.getElementById("p1");
+
+    </script>
+
+
+
+
+</body>
+
+</html>

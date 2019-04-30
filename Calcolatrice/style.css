@@ -40,12 +40,13 @@ input[type=button]:hover {
     overflow: hidden;
     outline:none;
     cursor: help;
-}
-
-/*input[id=equal] {
     visibility: hidden;
 }
 
+input[id=equal] {
+    width: 40%;
+}
+/*
 input[id=reset] {
     visibility: visible;
 }*/

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ProgettoAutobus
 {
@@ -23,23 +24,33 @@ namespace ProgettoAutobus
             if (passi-- == 0) CambiaDirezione();// finiti i passi si cambia direzione (N.B. l'operatore di post-incremento garantisce la variazione)
             if (direzione == 0) // quando ci siamo fermati
             {
-                if (passi == 0) // appena fermati
+                if (passi == 2) // appena fermati
                 {
+                    // si aprono le porte
+                    _jsonData.SetPorte(true);
                     // qualcuno potrebbe essere sceso
+                    _jsonData.AddPasseggeri(-(new Random()).Next(5));
                 }
-                else if (passi == 2) // stiamo per ripartire
+                else if (passi == 0) // stiamo per ripartire
                 {
                     // qualcuno potrebbe essere salito
+                    _jsonData.AddPasseggeri((new Random()).Next(5));
+                    // si chiudono le porte
+                    _jsonData.SetPorte(false);
                 }
             }
-            else
+            else // altrimenti siamo in movimmento
             {
-                if (direzione != 1)
+                if (direzione != 1) // stiamo facendo una curva
                 {
-                    // stiamo facendo una curva
+                    angolo += (direzione == 0) ? -0.05 : 0.05; // quindi variamo l'angolo di spostamento
                 }
-                // comunque stiamo andando avanti
+                // comunque stiamo andando avanti e modifichiamo le coordinate
+                _jsonData.AddLatitudine(velocità * Math.Sin(angolo));
+                _jsonData.AddLongitudine(velocità * Math.Cos(angolo));
             }
+            //Console.WriteLine($"Attuale direzione: {direzione} angolo: {angolo} velocità: {velocità} passi: {passi}");
+            Trasmettitore.InoltraRecord(_jsonData);
         }
         private void CambiaDirezione()
         {
@@ -48,6 +59,7 @@ namespace ProgettoAutobus
             angolo += (nuovaDirezione == 2 ? 0.05 : (nuovaDirezione == -1 ? -0.05 : 0)); // nuova direzione += 2:+0.05 -1:-0.05 else:0
             velocità = (nuovaDirezione == 0 ? 0 : 0.1); // velocità = 0:0 else:0.1
             passi = (nuovaDirezione == 0 ? 3 : (nuovaDirezione == 1 ? 10 : 5)); // passi = 0:3 1:10 else:5
+            Console.WriteLine($"Nuova direzione: {direzione} angolo: {angolo} velocità: {velocità} passi: {passi}");
         }
         private void SetCittà(int indice, ref JsonDataRecord jsonData)
         {
@@ -112,7 +124,7 @@ namespace ProgettoAutobus
         public JsonDataRecord SetAltitudine(double alt) { _altitudine = alt; return this; }
         public JsonDataRecord AddAltitudine(double alt) { _altitudine += alt; return this; }
         public JsonDataRecord SetPasseggeri(int gente) { _passeggeri = gente; return this; }
-        public JsonDataRecord AddPasseggeri(int gente) { _passeggeri += gente; return this; }
+        public JsonDataRecord AddPasseggeri(int gente) { _passeggeri = Math.Max(0, _passeggeri + gente); return this; }
         public JsonDataRecord SetPorte(bool porte) { _porteAperte = porte; return this; }
         public JsonDataRecord InvertPorte() { _porteAperte = !_porteAperte; return this; }
         // UTILITA'
@@ -131,10 +143,25 @@ namespace ProgettoAutobus
         }
         public static string StackToString(Stack pila)
         {
+            // una pila intera viene convertita in stringa
             string risultato = "{ \"VettoreDati\": [\n";
             for (int i = 0; pila.Count > 0; i++)
                 risultato += (i > 0 ? ",\n" : "") + pila.Pop().ToString();
             return risultato += "\n]}";
+        }
+        public Dictionary<string, string> ToDictionary()
+        {
+            // qui i dati del singolo record vengono convertiti in coppie di stringa <nome:dato>
+            return new Dictionary<string, string> {
+                        { "id", _idVeicolo.ToString() },
+                        { "descrizione", _descrizione },
+                        { "timeStamp", _timeStamp },
+                        { "latitudine", _latitudine.ToString().Replace(',', '.') },
+                        { "longitudine", _longitudine.ToString().Replace(',', '.') },
+                        { "altitudine", _altitudine.ToString().Replace(',', '.') },
+                        { "passeggeri", _passeggeri.ToString() },
+                        { "porteAperte", _porteAperte.ToString() }
+            };
         }
     }
 }

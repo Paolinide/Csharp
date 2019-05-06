@@ -1,0 +1,7 @@
+{ "VettoreDati": [
+{ "id": 0, "descrizione": "Pordenone", "timeStamp": "06/05/2019 17:49:25", "latitudine": 46.3509570034064, "longitudine": 13.66845370445, "altitudine": 24, "passeggeri": 7, "porteAperte": False },
+{ "id": 0, "descrizione": "Pordenone", "timeStamp": "06/05/2019 17:49:25", "latitudine": 46.3509570034064, "longitudine": 13.66845370445, "altitudine": 24, "passeggeri": 7, "porteAperte": False },
+{ "id": 0, "descrizione": "Pordenone", "timeStamp": "06/05/2019 17:49:25", "latitudine": 46.3509570034064, "longitudine": 13.66845370445, "altitudine": 24, "passeggeri": 7, "porteAperte": False },
+{ "id": 0, "descrizione": "Pordenone", "timeStamp": "06/05/2019 17:49:25", "latitudine": 46.3509570034064, "longitudine": 13.66845370445, "altitudine": 24, "passeggeri": 7, "porteAperte": False },
+{ "id": 0, "descrizione": "Pordenone", "timeStamp": "06/05/2019 17:49:25", "latitudine": 46.3509570034064, "longitudine": 13.66845370445, "altitudine": 24, "passeggeri": 7, "porteAperte": False }
+]}

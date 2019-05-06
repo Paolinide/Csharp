@@ -9,17 +9,19 @@ namespace ProgettoAutobus
         static void Main(string[] args)
         {
             Console.Clear();
+            Console.WriteLine("Connessione " + (Trasmettitore.VerificaConnessione() ? "attiva" : "non attiva"));
             var v1 = new Veicolo();
-            var v2 = new Veicolo();
-            var v3 = new Veicolo();
-            var v4 = new Veicolo();
-            var v5 = new Veicolo();
-            double[] alfa = { -Math.PI, -0.5 * Math.PI, 0, 0.5 * Math.PI, Math.PI };
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 50; i++)
             {
-                double a = i * Math.PI / 8;
-                Console.WriteLine($"Sin({a,4:N2}): [{Math.Sin(a),4:N2}], Cos({a,4:N2}): [{Math.Cos(a),4:N2}]");
+                if (i > 25) Trasmettitore.connessione = true;
+                v1.Aggiorna();
             }
+
+            // var v2 = new Veicolo();
+            // var v3 = new Veicolo();
+            // var v4 = new Veicolo();
+            // var v5 = new Veicolo();
+
             // JsonDataRecord jr = new JsonDataRecord();
             // // //Console.WriteLine(jr);
             // Stack pila = new Stack();

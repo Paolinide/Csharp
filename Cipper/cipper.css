@@ -1,0 +1,59 @@
+/*.body{
+    text-align: left;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    float:left;
+}*/
+
+
+.input {
+    float: left;
+    background-color: #cbff9d;
+    width: 40%;
+}
+
+.output {
+    float: left;
+    width: 50%;
+    background-color: #ffbfbf;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1pt solid rgb(176, 0, 0);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.card {
+    border: 1pt solid rgb(52, 0, 0);
+    width: 100%;
+    margin-top: 10px;
+}
+.red{
+    background-color: red;
+}
+.panel {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+
+}
+
+.post {
+
+}
+
+.textBox {
+    float: left;
+}
+#charsLeft{
+    width:30px;
+    float:right;
+    margin-right: 40px;
+}
+

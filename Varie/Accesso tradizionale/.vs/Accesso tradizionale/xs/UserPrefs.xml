@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{35C8B462-40BF-4042-AA37-75A0DA077ABB}|Default">
+  <MonoDevelop.Ide.ItemProperties.Accesso_220tradizionale PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Accesso tradizionale" expanded="True">
+            <Node name="Accesso tradizionale" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Proprietario.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

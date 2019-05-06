@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/bin/Debug/netcoreapp2.2/Cambia Base.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/bin/Debug/netcoreapp2.2/Cambia Base.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/bin/Debug/netcoreapp2.2/Cambia Base.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/bin/Debug/netcoreapp2.2/Cambia Base.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/bin/Debug/netcoreapp2.2/Cambia Base.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/obj/Debug/netcoreapp2.2/Cambia Base.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/obj/Debug/netcoreapp2.2/Cambia Base.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/obj/Debug/netcoreapp2.2/Cambia Base.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/obj/Debug/netcoreapp2.2/Cambia Base.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/obj/Debug/netcoreapp2.2/Cambia Base.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Cambia Base/obj/Debug/netcoreapp2.2/Cambia Base.pdb

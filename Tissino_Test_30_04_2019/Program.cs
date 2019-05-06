@@ -20,11 +20,13 @@ namespace Test_30_04_2019
         static void Main(string[] args)
         {
             Console.Clear();
-            var g = new Gioco();
+            var g = new Gioco(TipoCarte.ScalaQuaranta);
             foreach (var giocatore in g.giocatori)
             {
-                giocatore.Stampa();
+                giocatore.Stampa(true);
+                Console.WriteLine();
             }
+            Console.WriteLine();//"♥,♦,♣,♠");
         }
     }
 }

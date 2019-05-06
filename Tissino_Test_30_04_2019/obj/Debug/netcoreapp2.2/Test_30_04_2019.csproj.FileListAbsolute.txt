@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/bin/Debug/netcoreapp2.2/Test_30_04_2019.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/bin/Debug/netcoreapp2.2/Test_30_04_2019.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/bin/Debug/netcoreapp2.2/Test_30_04_2019.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/bin/Debug/netcoreapp2.2/Test_30_04_2019.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/bin/Debug/netcoreapp2.2/Test_30_04_2019.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/obj/Debug/netcoreapp2.2/Test_30_04_2019.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/obj/Debug/netcoreapp2.2/Test_30_04_2019.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/obj/Debug/netcoreapp2.2/Test_30_04_2019.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/obj/Debug/netcoreapp2.2/Test_30_04_2019.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/obj/Debug/netcoreapp2.2/Test_30_04_2019.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Tissino_Test_30_04_2019/obj/Debug/netcoreapp2.2/Test_30_04_2019.pdb

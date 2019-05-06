@@ -24,11 +24,11 @@ namespace Test_30_04_2019
             {
                 case TipoCarte.Pocker:
                     Console.WriteLine("Pocker");
-                    NuovoMazzo("c,q,f,p", "A,6,7,8,9,10,Q,J,K"); //"♥,♦,♣,♠"
+                    NuovoMazzo("♥,♦,♣,♠", "A,6,7,8,9,10,Q,J,K"); //"♥,♦,♣,♠"
                     break;
                 case TipoCarte.ScalaQuaranta:
                     Console.WriteLine("Scala quaranta");
-                    NuovoMazzo("c,q,f,p", "A,2,3,4,5,6,7,8,9,10,Q,J,K,jolly");
+                    NuovoMazzo("♥,♦,♣,♠", "A,2,3,4,5,6,7,8,9,10,Q,J,K,jolly", 2);
                     break;
                 default: // TipoCarte.Briscola o non gestito
                     Console.WriteLine("Briscola by Default");
@@ -98,15 +98,22 @@ namespace Test_30_04_2019
             this.colore = colore;
             this.dorso = coloreDorso;
         }
-        public override string ToString() { return valore + colore + dorso; }
-        public void Stampa(bool aCapo = false) { Console.Write(ToString() + (aCapo ? "\n" : "")); }
-
+        public override string ToString() => valore + colore;// + dorso;
+        //public void Stampa(bool aCapo = false) { Console.Write("{0, 4}{1}", ToString(), (aCapo ? "\n" : "")); }
+        public void Stampa(bool aCapo = false)
+        {
+            Console.ForegroundColor = ConsoleColor.Black; // (dorso == "rosso" ? ConsoleColor.Red : ConsoleColor.Blue);
+            Console.BackgroundColor = (dorso == "rosso" ? ConsoleColor.DarkRed : ConsoleColor.DarkBlue);
+            Console.Write(ToString());
+            Console.ResetColor();
+            if (aCapo) Console.WriteLine();
+        }
     }
     class Giocatore
     {
         static int _giocatori = 0; // contatore dei giocatori, tiene traccia del numero di giocatori...
         static int giocatori { get => _giocatori++; } // ...ed è utile a fornire un nome generico
-        string nome = "Giocatore " + giocatori;
+        string nome = "Giocatore_" + giocatori;
 
         public List<Carta> mano = new List<Carta>(); // le carte in mano a ciascun giocatore
 
@@ -120,12 +127,22 @@ namespace Test_30_04_2019
         }
         public override string ToString()
         {
-            string risultato = nome;
+            string risultato = nome + ":[";
             foreach (var carta in mano)
-                risultato += " " + carta;
-            return risultato;
+                risultato += carta + " ";
+            return risultato + "\b] ";
         }
-        public void Stampa() { Console.Write(ToString()); }
+        //public void Stampa(bool aCapo = false) { Console.Write(ToString() + (aCapo ? "\n" : "")); }
+        public void Stampa(bool aCapo = false)
+        {
+            Console.Write(nome + ":(");
+            foreach (var carta in mano)
+            {
+                carta.Stampa();
+                Console.Write(" ");
+            }
+            Console.Write("\b) " + (aCapo ? "\n" : ""));
+        }
     }
     class Gioco
     {
@@ -142,6 +159,7 @@ namespace Test_30_04_2019
             {
                 giocatori[i] = new Giocatore();
             }
+            Distribuisci();
         }
         // distribuiamo 5 carte a testa
         void Distribuisci(int numCarte = 5)

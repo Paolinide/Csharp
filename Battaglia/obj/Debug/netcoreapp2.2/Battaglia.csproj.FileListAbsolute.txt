@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/bin/Debug/netcoreapp2.2/Battaglia.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/bin/Debug/netcoreapp2.2/Battaglia.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/bin/Debug/netcoreapp2.2/Battaglia.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/bin/Debug/netcoreapp2.2/Battaglia.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/bin/Debug/netcoreapp2.2/Battaglia.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/obj/Debug/netcoreapp2.2/Battaglia.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/obj/Debug/netcoreapp2.2/Battaglia.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/obj/Debug/netcoreapp2.2/Battaglia.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/obj/Debug/netcoreapp2.2/Battaglia.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/obj/Debug/netcoreapp2.2/Battaglia.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Battaglia/obj/Debug/netcoreapp2.2/Battaglia.pdb

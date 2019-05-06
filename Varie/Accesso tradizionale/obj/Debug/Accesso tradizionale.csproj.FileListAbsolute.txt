@@ -1,0 +1,18 @@
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/bin/Debug/Accesso tradizionale.exe.config
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/bin/Debug/Accesso tradizionale.exe
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/bin/Debug/Accesso tradizionale.pdb
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/obj/Debug/Accesso tradizionale.csprojAssemblyReference.cache
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/obj/Debug/Accesso_tradizionale.Properties.Resources.resources
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/obj/Debug/Accesso tradizionale.csproj.GenerateResource.cache
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/obj/Debug/Accesso tradizionale.csproj.CoreCompileInputs.cache
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/obj/Debug/Accesso tradizionale.exe
+C:/Users/PC/Documents/ProgettiC#/17_04/Accesso tradizionale/obj/Debug/Accesso tradizionale.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/bin/Debug/Accesso tradizionale.exe.config
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/bin/Debug/Accesso tradizionale.exe
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/bin/Debug/Accesso tradizionale.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/obj/Debug/Accesso tradizionale.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/obj/Debug/Accesso_tradizionale.Properties.Resources.resources
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/obj/Debug/Accesso tradizionale.csproj.GenerateResource.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/obj/Debug/Accesso tradizionale.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/obj/Debug/Accesso tradizionale.exe
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Varie/Accesso tradizionale/obj/Debug/Accesso tradizionale.pdb

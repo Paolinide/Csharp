@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{35C8B462-40BF-4042-AA37-75A0DA077ABB}|Default">
   <MonoDevelop.Ide.ItemProperties.Accesso_220tradizionale PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DBProprietari.cs">
+    <Files>
+      <File FileName="DBProprietari.cs" Line="1" Column="14" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Accesso tradizionale" expanded="True">
             <Node name="Accesso tradizionale" expanded="True">
               <Node name="Properties" expanded="True" />
-              <Node name="Proprietario.cs" selected="True" />
+              <Node name="DBProprietari.cs" selected="True" />
             </Node>
           </Node>
         </State>

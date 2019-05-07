@@ -9,13 +9,14 @@ namespace ProgettoAutobus
         static void Main(string[] args)
         {
             Console.Clear();
-            Console.WriteLine("Connessione " + (Trasmettitore.VerificaConnessione() ? "attiva" : "non attiva"));
             var v1 = new Veicolo();
             for (int i = 0; i < 50; i++)
             {
-                if (i > 25) Trasmettitore.connessione = true;
+                //if (i > 25) Trasmettitore.connessione = true;
                 v1.Aggiorna();
             }
+            Archiviatore.ThrowAll();
+            Console.WriteLine("Connessione " + (Trasmettitore.VerificaConnessione() ? "attiva" : "non attiva"));
 
             // var v2 = new Veicolo();
             // var v3 = new Veicolo();

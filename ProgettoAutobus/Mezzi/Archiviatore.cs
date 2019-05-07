@@ -21,6 +21,57 @@ namespace ProgettoAutobus
             pila.Clear();
             return true;
         }
+        public static string Pull()
+        {
+            // procediamo alla lettura
+            if (fileInArchivio)
+            {
+                // N.B. Al momento della lettura il contatore dei file creati NON viene post-derementato
+                string nomeFile = $"pila{_fileSalvati}.txt";
+                string risultato = nomeFile + " vuoto?!"; // se viene visualizzata 'sta stringa, qualcosa non funziona!
+                if (File.Exists(nomeFile)) // se esiste...
+                {
+                    // ...carichiamo l'ultimo file salvato
+                    using (StreamReader readtext = new StreamReader(nomeFile))
+                    {
+                        risultato = readtext.ReadToEnd(); // e lo mettiamo in una stringa
+                        Console.WriteLine("letto il file: “" + nomeFile + "”");
+                    }
+                }
+                return risultato;
+            }
+            else return null; // se non ci sono file salvati, non viene restituito niente
+        }
+        public static void ThrowLast()
+        {
+            // procediamo alla lettura
+            if (fileInArchivio)
+            {
+                // N.B. Al momento della lettura viene anche post-derementato il contatore dei file creati
+                string nomeFile = $"pila{_fileSalvati--}.txt";
+                if (File.Exists(nomeFile)) // se esiste...
+                {
+                    // eliminiamo il file caricato
+                    File.Delete(nomeFile);
+                    Console.WriteLine(nomeFile + " eliminato...");
+                }
+            }
+        }
+        public static void ThrowAll()
+        {
+            // procediamo alla lettura
+            while (fileInArchivio)
+            {
+                // N.B. Al momento della lettura viene anche post-derementato il contatore dei file creati
+                string nomeFile = $"pila{_fileSalvati--}.txt";
+                if (File.Exists(nomeFile)) // se esiste...
+                {
+                    // eliminiamo il file caricato
+                    File.Delete(nomeFile);
+                    Console.WriteLine(nomeFile + " eliminato...");
+                }
+            }
+        }
         public static string Pop()
         {
             // procediamo alla lettura

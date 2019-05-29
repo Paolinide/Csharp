@@ -1,0 +1,11 @@
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/obj/Debug/netcoreapp2.2/Menù.csprojAssemblyReference.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/obj/Debug/netcoreapp2.2/Menù.csproj.CoreCompileInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/obj/Debug/netcoreapp2.2/Menù.AssemblyInfoInputs.cache
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/obj/Debug/netcoreapp2.2/Menù.AssemblyInfo.cs
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/bin/Debug/netcoreapp2.2/Menù.deps.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/bin/Debug/netcoreapp2.2/Menù.runtimeconfig.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/bin/Debug/netcoreapp2.2/Menù.runtimeconfig.dev.json
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/bin/Debug/netcoreapp2.2/Menù.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/bin/Debug/netcoreapp2.2/Menù.pdb
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/obj/Debug/netcoreapp2.2/Menù.dll
+/Users/jeanpaul/Documents/Dam/C#/Csharp/Menù/obj/Debug/netcoreapp2.2/Menù.pdb

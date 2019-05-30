@@ -9,6 +9,9 @@ namespace Menù
         static void Main(string[] args)
         {
             Console.Clear();
+            
+            Freccette.Gioca();
+            return;
 
             Menu menu = new Menu("Menu di prova"); // si crea un nuovo menu vuoto con un nome
             // poi gli si aggiungono le voci al volo
